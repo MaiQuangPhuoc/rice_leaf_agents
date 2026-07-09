@@ -141,7 +141,7 @@ def index(
 if __name__ == "__main__":
     # from config import env_config   # import env của dự án
 
-    DOC_PATH = r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\rag\documents\toan_10\grade_10_chan_troi_sang_tao_toan_1.md"
+    DOC_PATH = r"D:\VKU\Nam_3\thuc_tap_doanh_nghiep_he_eSTI\EDUAGENT\src\modules\rag\documents\toan_10\documents\grade_10_chan_troi_sang_tao_toan_1.md"
 
     index(
         filepath       = DOC_PATH,

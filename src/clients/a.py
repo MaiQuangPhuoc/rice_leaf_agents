@@ -1,44 +1,4 @@
-# import os
-# from dotenv import load_dotenv
-# from openai import OpenAI
 
-# load_dotenv()
-
-# client = OpenAI(
-#     api_key="sk-6711021848614bc29693029556b53ee9",
-#     base_url="https://api.deepseek.com",
-# )
-
-# res = client.chat.completions.create(
-#     model="deepseek-v4-flash",
-#     messages=[
-#         {"role": "user", "content": "Xin chào, trả lời ngắn gọn: DeepSeek là gì?"}
-#     ],
-# )
-
-# print(res.choices[0].message.content)
-
-
-# from openai import OpenAI
-
-# class DeepSeekClient:
-
-#     def __init__(self):
-#         self.client = OpenAI(
-#             api_key="sk-6711021848614bc29693029556b53ee9",
-#             base_url="https://api.deepseek.com",
-#         )
-
-#     def invoke(self, prompt: str):
-#         response = self.client.chat.completions.create(
-#             model="deepseek-v4-flash",
-#             messages=[
-#                 {"role": "user", "content": prompt}
-#             ]
-#         )
-
-#         return response.choices[0].message.content
-    
 from openai import OpenAI
 from types import SimpleNamespace
 

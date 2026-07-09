@@ -1,1 +1,0 @@
-print("pkg CV test  file")
