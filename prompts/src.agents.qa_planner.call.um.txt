@@ -1,0 +1,5 @@
+NỘI DUNG KẾ HOẠCH NHƯ SAU:
+{plan_data}
+
+CÂU HỎI, YÊU CẦU CỦA HỌC SINH NHƯ SAU:
+{qa_user}

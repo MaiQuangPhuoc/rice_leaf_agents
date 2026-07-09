@@ -1,0 +1,147 @@
+keywords_1 = [
+    'Xanthomonas oryzae pv. oryzae',
+    'Xoo',
+    'vi khuẩn Gram âm',
+    'hình gậy ngắn',
+    'roi',
+    'tàn dư lá bệnh',
+    'gốc rạ',
+    'hạt giống',
+    'cỏ lồng vực',
+    'cỏ môi'
+]
+
+keywords_2 = [
+    'cháy bìa lá',
+    'héo xanh',
+    'Kresek',
+    'vệt sũng nước',
+    'bạc lá',
+    'ranh giới lượn sóng',
+    'giọt dịch vi khuẩn',
+    'viên keo',
+    'mạch dẫn nước',
+    'chết xanh'
+]
+
+keywords_3 = [
+    'thủy khổng',
+    'lỗ nước',
+    'vết thương cơ học',
+    'mạch gỗ',
+    'xylem',
+    'EPS',
+    'tắc nghẽn mạch dẫn',
+    'nước mưa',
+    'nước tưới tiêu',
+    'gió bão'
+]
+
+keywords_4 = [
+    'mưa bão',
+    'độ ẩm cao',
+    '26-30°C',
+    'thiếu nắng',
+    'thừa Đạm',
+    'bón đạm muộn',
+    'lá lúa mỏng',
+    'lá rủ',
+    'bản lá rộng',
+    'giống mẫn cảm'
+]
+
+keywords_5 = [
+    'giảm quang hợp',
+    'diện tích lá xanh',
+    'tinh bột',
+    'lép hạt',
+    'làm đòng',
+    'trỗ bông',
+    'thiệt hại năng suất',
+    'Kresek',
+    'héo xanh',
+    'mất trắng'
+]
+
+keywords_6 = [
+    'giống kháng',
+    'quản lý nước',
+    'rút nước',
+    'lây lan qua nước',
+    'sạ thưa',
+    'bón phân cân đối',
+    'không để nước ruộng bệnh',
+    'ruộng khỏe',
+    'tránh làm rách lá',
+    'canh tác'
+]
+
+keywords_7 = [
+    'gen kháng Xa',
+    'Xa21',
+    'Xa4',
+    'Xa7',
+    'xa5',
+    'xa13',
+    'Gene Pyramiding',
+    'đa gen',
+    'phổ kháng rộng',
+    'kháng bền vững'
+]
+
+keywords_8 = [
+    'Kali',
+    'chống chịu',
+    'Vôi bột',
+    'khử chua',
+    'ngưng Đạm',
+    'Urê',
+    'phân bón lá',
+    'chất kích thích sinh trưởng',
+    'bùng phát bệnh'
+]
+
+keywords_9 = [
+    'Bismerthiazol',
+    'Bronopol',
+    'Oxolinic acid',
+    'Kasugamycin',
+    'Copper',
+    'sát khuẩn',
+    'kháng sinh sinh học',
+    'hoạt chất đặc trị vi khuẩn'
+]
+
+keywords_10 = [
+    'Xanthomonas oryzae',
+    'vi khuẩn',
+    'thuốc trị nấm',
+    'Tricyclazole',
+    'phun nhầm thuốc',
+    'định danh tác nhân'
+]
+
+keywords_11 = [
+    'xâm nhiễm',
+    'thủy khổng',
+    'vết thương mép lá',
+    'ủ bệnh',
+    'gian bào',
+    'mạch gỗ',
+    'vệt sũng nước',
+    'khô trắng',
+    'bacterial ooze',
+    'phát tán'
+]
+
+keywords_12 = [
+    'Kali Clorua',
+    'Kali Sunphat',
+    'Silic',
+    'lá dày',
+    'vết thương cơ học',
+    'GA3',
+    'kích thích tố sinh trưởng',
+    'axit amin',
+    'môi trường giàu dinh dưỡng hữu cơ'
+]

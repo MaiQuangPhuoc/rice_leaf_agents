@@ -1,0 +1,166 @@
+{
+  "plan_id": "2adad477-1f3a-4d29-b571-6007e4efe757",
+  "user_id": "user_id",
+  "thread_id": "thread_id",
+  "disease": "đạo ôn lá",
+  "duration_days": 14,
+  "location": "Hà Nội",
+  "rice_stage": "đẻ nhánh",
+  "status": "detail",
+  "skeleton": [
+    {
+      "phase": "Giai đoạn 1: Khảo sát và xử lý khẩn cấp",
+      "duration_days": 3,
+      "main_content": "Khảo sát toàn ruộng 300m², xác định tỷ lệ lá bệnh, phun thuốc trừ bệnh Tricyclazole lần 1, giảm lượng đạm bón",
+      "expected_result": "Giảm tốc độ phát sinh vết bệnh mới, ngăn bệnh lây lan"
+    },
+    {
+      "phase": "Giai đoạn 2: Kiểm soát lây lan",
+      "duration_days": 4,
+      "main_content": "Theo dõi sát khu vực nhiễm bệnh, kiểm tra lá mới, điều chỉnh mực nước ruộng, phun thuốc trừ bệnh lần 2 nếu cần",
+      "expected_result": "Không xuất hiện ổ bệnh mới, bệnh không lan rộng"
+    },
+    {
+      "phase": "Giai đoạn 3: Theo dõi sát",
+      "duration_days": 3,
+      "main_content": "Kiểm tra định kỳ, so sánh diễn biến bệnh, đánh giá hiệu quả xử lý, phun thuốc phòng ngừa nếu cần",
+      "expected_result": "Bệnh duy trì ổn định, không phát sinh ổ bệnh mới"
+    },
+    {
+      "phase": "Giai đoạn 4: Ổn định sinh trưởng",
+      "duration_days": 4,
+      "main_content": "Theo dõi lá mới, đánh giá sức sinh trưởng, duy trì điều kiện ruộng phù hợp, bón phân cân đối",
+      "expected_result": "Cây phục hồi và phát triển bình thường"
+    }
+  ],
+  "steps": [
+    {
+      "day": 1,
+      "phase": "Giai đoạn 1: Khảo sát và xử lý khẩn cấp",
+      "action": "Khảo sát toàn bộ ruộng 300m², xác định tỷ lệ lá bệnh, ghi chép vị trí và mức độ bệnh",
+      "medicine": null,
+      "dosage": null,
+      "condition": "Khảo sát vào buổi sáng sớm khi sương còn đọng",
+      "note": "Ghi chép vào sổ: số khóm bệnh, vị trí ổ bệnh, màu vết bệnh"
+    },
+    {
+      "day": 2,
+      "phase": "Giai đoạn 1: Khảo sát và xử lý khẩn cấp",
+      "action": "Chuẩn bị thuốc Tricyclazole, kiểm tra bình phun 16 lít, tính lượng thuốc cần dùng cho 300m²",
+      "medicine": null,
+      "dosage": null,
+      "condition": "Theo dõi thời tiết, tránh phun khi có mưa",
+      "note": "Nếu thấy vết bệnh lan rộng hơn hôm qua thì chuyển sang xử lý ngay ngày 3"
+    },
+    {
+      "day": 3,
+      "phase": "Giai đoạn 1: Khảo sát và xử lý khẩn cấp",
+      "action": "Phun Tricyclazole lần 1 vào buổi sáng sớm trước 8h, phun đều toàn bộ tán lá",
+      "medicine": "Tricyclazole 75WP",
+      "dosage": "1.5 muỗng canh pha bình 16 lít, phun 2 bình/300m²",
+      "condition": "Phun khi không có gió mạnh, không có mưa trong 4 giờ sau khi phun",
+      "note": "Sau khi phun giảm bón đạm 50% so với kế hoạch ban đầu"
+    },
+    {
+      "day": 4,
+      "phase": "Giai đoạn 2: Kiểm soát lây lan",
+      "action": "Kiểm tra lại toàn bộ ruộng, xác định hiệu quả của lần phun thuốc trước",
+      "medicine": null,
+      "dosage": null,
+      "condition": null,
+      "note": "Ghi chép vào sổ: tình trạng bệnh, hiệu quả xử lý"
+    },
+    {
+      "day": 5,
+      "phase": "Giai đoạn 2: Kiểm soát lây lan",
+      "action": "Điều chỉnh mực nước ruộng xuống 3-5cm, theo dõi sát khu vực nhiễm bệnh",
+      "medicine": null,
+      "dosage": null,
+      "condition": null,
+      "note": "Đảm bảo không để ruộng úng nước"
+    },
+    {
+      "day": 6,
+      "phase": "Giai đoạn 2: Kiểm soát lây lan",
+      "action": "Phun thuốc lần 2 nếu cần, theo dõi diễn biến bệnh",
+      "medicine": "Tricyclazole 75WP",
+      "dosage": "1 muỗng canh pha bình 16 lít, phun 2 bình/300m²",
+      "condition": "Phun khi không có gió mạnh, không có mưa trong 4 giờ sau khi phun",
+      "note": "Đánh giá hiệu quả xử lý"
+    },
+    {
+      "day": 7,
+      "phase": "Giai đoạn 3: Theo dõi sát",
+      "action": "Kiểm tra định kỳ toàn bộ ruộng, so sánh diễn biến bệnh",
+      "medicine": null,
+      "dosage": null,
+      "condition": null,
+      "note": "Ghi chép vào sổ: tình trạng bệnh, hiệu quả xử lý"
+    },
+    {
+      "day": 8,
+      "phase": "Giai đoạn 3: Theo dõi sát",
+      "action": "Theo dõi lá mới, đánh giá sức sinh trưởng của cây lúa",
+      "medicine": null,
+      "dosage": null,
+      "condition": null,
+      "note": "Điều chỉnh phân bón nếu cần"
+    },
+    {
+      "day": 9,
+      "phase": "Giai đoạn 3: Theo dõi sát",
+      "action": "Phun thuốc phòng ngừa nếu cần, duy trì điều kiện ruộng phù hợp",
+      "medicine": "Tricyclazole 75WP",
+      "dosage": "0.5 muỗng canh pha bình 16 lít, phun 2 bình/300m²",
+      "condition": "Phun khi không có gió mạnh, không có mưa trong 4 giờ sau khi phun",
+      "note": "Đánh giá hiệu quả xử lý"
+    },
+    {
+      "day": 10,
+      "phase": "Giai đoạn 4: Ổn định sinh trưởng",
+      "action": "Theo dõi lá mới, đánh giá sức sinh trưởng của cây lúa",
+      "medicine": null,
+      "dosage": null,
+      "condition": null,
+      "note": "Điều chỉnh phân bón nếu cần"
+    },
+    {
+      "day": 11,
+      "phase": "Giai đoạn 4: Ổn định sinh trưởng",
+      "action": "Bón phân cân đối, duy trì điều kiện ruộng phù hợp",
+      "medicine": null,
+      "dosage": null,
+      "condition": null,
+      "note": "Đảm bảo không để ruộng úng nước"
+    },
+    {
+      "day": 12,
+      "phase": "Giai đoạn 4: Ổn định sinh trưởng",
+      "action": "Kiểm tra định kỳ toàn bộ ruộng, đánh giá hiệu quả xử lý",
+      "medicine": null,
+      "dosage": null,
+      "condition": null,
+      "note": "Ghi chép vào sổ: tình trạng bệnh, hiệu quả xử lý"
+    },
+    {
+      "day": 13,
+      "phase": "Giai đoạn 4: Ổn định sinh trưởng",
+      "action": "Theo dõi lá mới, đánh giá sức sinh trưởng của cây lúa",
+      "medicine": null,
+      "dosage": null,
+      "condition": null,
+      "note": "Điều chỉnh phân bón nếu cần"
+    },
+    {
+      "day": 14,
+      "phase": "Giai đoạn 4: Ổn định sinh trưởng",
+      "action": "Kiểm tra cuối cùng, đánh giá hiệu quả xử lý",
+      "medicine": null,
+      "dosage": null,
+      "condition": null,
+      "note": "Ghi chép vào sổ: tình trạng bệnh, hiệu quả xử lý"
+    }
+  ],
+  "created_at": "2026-06-21T23:12:35.952287",
+  "updated_at": "2026-06-21T23:12:35.952287"
+}

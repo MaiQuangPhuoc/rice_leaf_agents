@@ -1,0 +1,140 @@
+keywords_1 = [
+    'Cercospora janseana',
+    'Sphaerulina oryzina',
+    'Deuteromycetes',
+    'rơm rạ',
+    'gốc rạ',
+    'cỏ dại ký chủ',
+    'nguồn lây nhiễm ban đầu'
+]
+
+keywords_2 = [
+    'vệt gạch nâu',
+    'song song gân lá',
+    'nâu đỏ',
+    'nâu sẫm',
+    'không có tâm trắng',
+    'lá đòng',
+    'lá công năng',
+    'cháy lá',
+    'net blotch',
+    'bẹ lá'
+]
+
+keywords_3 = [
+    'khí khổng',
+    'stomata',
+    'Cercosporin',
+    'hoại tử mô lá',
+    'Conidia',
+    'quang hợp',
+    'lão hóa sớm',
+    'premature senescence',
+    'phát tán qua gió',
+    'bắn tóe'
+]
+
+keywords_4 = [
+    'thiếu hụt Kali',
+    'Potassium',
+    'mất cân đối dinh dưỡng',
+    'giống mẫn cảm',
+    'nhiệt độ nóng ẩm',
+    'sương mù dày',
+    'giai đoạn làm đòng',
+    'giai đoạn trổ chín'
+]
+
+keywords_5 = [
+    'lá đòng',
+    'lá công năng',
+    'tàn lụi sớm',
+    'quang hợp',
+    'tích lũy tinh bột',
+    'hạt lửng',
+    'trọng lượng 1000 hạt',
+    'đổ ngã',
+    'bẹ lá thối'
+]
+
+keywords_6 = [
+    'giống kháng',
+    'cày vùi rơm rạ',
+    'cỏ dại ký chủ',
+    'nguồn bệnh',
+    'N-P-K',
+    'cung cấp Kali',
+    'giai đoạn đón đòng',
+    'quản lý dinh dưỡng'
+]
+
+keywords_7 = [
+    'polygenic',
+    'tính kháng đa gen',
+    'CRSP',
+    'gen kháng',
+    'nhận biết nấm',
+    'ngăn chặn nấm',
+    'giống lai tạo',
+    'giảm thuốc hóa học'
+]
+
+keywords_8 = [
+    'Kali',
+    'KCL',
+    'K2SO4',
+    'thiếu Kali',
+    'chỉ thị sinh học',
+    'lá dày',
+    'Lân',
+    'bộ rễ phát triển sâu',
+    'thừa Đạm',
+    'kéo dài sinh trưởng'
+]
+
+keywords_9 = [
+    'Triazole',
+    'Propiconazole',
+    'Hexaconazole',
+    'Difenoconazole',
+    'Carbendazim',
+    'lưu dẫn',
+    'kiểm soát Cercospora',
+    'kháng thuốc'
+]
+
+keywords_10 = [
+    'Cercospora janseana',
+    'Sọc trong',
+    'Xanthomonas oryzae pv. oryzicola',
+    'vết bệnh hẹp',
+    'nâu đỏ',
+    'khô ráo',
+    'sũng nước',
+    'trong suốt',
+    'dịch vi khuẩn'
+]
+
+keywords_11 = [
+    'Latent period',
+    'ủ bệnh',
+    '30 ngày',
+    'giai đoạn sinh thực',
+    'làm đòng',
+    'trổ',
+    'vết gạch nâu',
+    'sản sinh bào tử',
+    'phát tán'
+]
+
+keywords_12 = [
+    'Potassium',
+    'K+',
+    'bón dặm Kali',
+    'phun Kali qua lá',
+    'Silic',
+    'biểu bì lá',
+    'Canxi',
+    'thành tế bào',
+    'độc tố nấm'
+]

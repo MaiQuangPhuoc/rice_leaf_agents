@@ -1,0 +1,153 @@
+keywords_1 = [
+    'NẤM đất',
+    'Rhizoctonia solani',
+    'Thanatephorus cucumeris',
+    'sợi nấm',
+    'mycelium',
+    'hạch nấm',
+    'sclerotia',
+    'sinh sản hữu tính',
+    'sinh sản vô tính',
+    'cấu trúc sinh tồn'
+]
+
+keywords_2 = [
+    'bẹ lá già sát gốc',
+    'phiến lá',
+    'vết đốm bầu dục',
+    'xanh xám sũng nước',
+    'tâm trắng xám',
+    'viền nâu tím',
+    'mảng vằn vện',
+    'da hổ',
+    'da rắn',
+    'lép trắng'
+]
+
+keywords_3 = [
+    'hạch nấm',
+    'sợi nấm',
+    'nệm xâm nhiễm',
+    'infection cushion',
+    'enzyme phân hủy',
+    'vách tế bào',
+    'mô cây',
+    'lây lan dọc',
+    'lây lan ngang',
+    'tán lá giao nhau'
+]
+
+keywords_4 = [
+    'nóng và ẩm',
+    '28-32°C',
+    'độ ẩm 95-100%',
+    'vụ Hè Thu',
+    'gieo sạ dày',
+    'tán lúa rậm rạp',
+    'tiểu khí hậu ẩm ướt',
+    'thừa đạm',
+    'Nitrogen',
+    'lá rủ'
+]
+
+keywords_5 = [
+    'đổ ngã',
+    'Lodging',
+    'thối mềm bẹ lá',
+    'thối mềm thân lúa',
+    'lá đòng',
+    'quang hợp đình trệ',
+    'hạt lép',
+    'hạt lửng',
+    'lem màu',
+    'tỷ lệ gạo nguyên thấp'
+]
+
+keywords_6 = [
+    'cày vùi gốc rạ',
+    'ngâm nước',
+    'diệt hạch nấm',
+    'tàn dư thực vật',
+    'sạ thưa',
+    'cấy hàng rộng',
+    'độ thông thoáng',
+    'rút cạn nước',
+    'giảm độ ẩm',
+    'phát tán theo dòng nước'
+]
+
+keywords_7 = [
+    'kháng định lượng',
+    'Quantitative resistance',
+    'QTL',
+    'nhiều gen nhỏ',
+    'chống chịu',
+    'tích hợp QTL',
+    'hình thái cây cứng cáp',
+    'lá đứng',
+    'bẹ lá ôm sát thân'
+]
+
+keywords_8 = [
+    'ngừng Đạm',
+    'Urê',
+    'DAP',
+    'tăng Kali',
+    'vách tế bào dày',
+    'sợi nấm',
+    'Vôi',
+    'Canxi',
+    'phân hủy rơm rạ',
+    'diệt hạch nấm'
+]
+
+keywords_9 = [
+    'Validamycin',
+    'Triazoles',
+    'Hexaconazole',
+    'Propiconazole',
+    'Difenoconazole',
+    'Strobilurins',
+    'Azoxystrobin',
+    'Carboxamide',
+    'Thifluzamide',
+    'đặc trị Rhizoctonia'
+]
+
+keywords_10 = [
+    'Rhizoctonia solani',
+    'NẤM',
+    'tác nhân vi khuẩn',
+    'thuốc kháng khuẩn',
+    'Copper',
+    'Streptomycin',
+    'bội nhiễm',
+    'cháy bìa lá',
+    'thối gốc'
+]
+
+keywords_11 = [
+    'hạch nấm',
+    'xâm nhiễm sơ cấp',
+    'giai đoạn đẻ nhánh',
+    'vết đốm nhỏ',
+    'lây lan thứ cấp',
+    'sợi nấm',
+    'da hổ',
+    'tái tạo nguồn bệnh',
+    'hạch nấm mới',
+    'lưu tồn'
+]
+
+keywords_12 = [
+    'Silic',
+    'SiO2',
+    'tế bào biểu bì',
+    'sợi nấm',
+    'giảm đổ ngã',
+    'Kali',
+    'áp suất thẩm thấu',
+    'độ cứng thân cây',
+    'Brassinosteroids',
+    'stress tolerance'
+]

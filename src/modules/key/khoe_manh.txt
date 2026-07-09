@@ -1,0 +1,127 @@
+keywords_1 = [
+    'bộ gen tốt',
+    'hệ thống rễ',
+    'vi sinh vật có lợi',
+    'nội cộng sinh',
+    'ngoại cộng sinh',
+    'không xâm nhiễm',
+    'không phá hủy tế bào'
+]
+
+keywords_2 = [
+    'xanh lục đồng nhất',
+    'phiến lá nguyên vẹn',
+    'lá đứng thẳng',
+    'mép lá sắc',
+    'gân lá song song',
+    'không có đốm bệnh',
+    'không có dịch nhầy'
+]
+
+keywords_3 = [
+    'quang hợp',
+    'diệp lục tố',
+    'khí khổng',
+    'thoát hơi nước',
+    'vận chuyển dinh dưỡng',
+    'chuyển hóa sinh hóa',
+    'không tắc nghẽn mạch dẫn'
+]
+
+keywords_4 = [
+    'bức xạ quang hợp',
+    'tưới ngập khô xen kẽ',
+    'dinh dưỡng cân đối',
+    'NPK',
+    'Silic',
+    'Canxi',
+    'Magie',
+    'nhiệt độ thuận lợi'
+]
+
+keywords_5 = [
+    'lá đòng',
+    'lá công năng',
+    'carbohydrate',
+    'hạt chắc',
+    'giảm hạt lép',
+    'giảm hạt lửng',
+    'gạo nguyên',
+    'tích lũy tinh bột'
+]
+
+keywords_6 = [
+    'IPM',
+    'thiên địch',
+    'mật độ gieo sạ',
+    'sạ thưa',
+    'đón ánh sáng',
+    'vệ sinh đồng ruộng',
+    'hạn chế nấm mốc'
+]
+
+keywords_7 = [
+    'bộ lá đứng',
+    'góc lá hẹp',
+    'lá dày',
+    'stay-green',
+    'hiệu suất quang hợp',
+    'gen kháng',
+    'R-genes',
+    'ngăn chặn xâm nhập'
+]
+
+keywords_8 = [
+    '4 Đúng',
+    'Đạm',
+    'Lân',
+    'Kali',
+    'Silic',
+    'diệp lục',
+    'rào cản vật lý',
+    'bề mặt lá thô nhám'
+]
+
+keywords_9 = [
+    'chế phẩm sinh học',
+    'nấm đối kháng',
+    'Trichoderma',
+    'Chitosan',
+    'Salicylic acid',
+    'kích kháng',
+    'hệ miễn dịch tự nhiên',
+    'không phun thuốc hóa học'
+]
+
+keywords_10 = [
+    'PGPR',
+    'vi khuẩn cố định đạm',
+    'Cyanobacteria',
+    'Bacillus subtilis',
+    'Pseudomonas fluorescens',
+    'kích thích sinh trưởng',
+    'mật độ vi khuẩn gây hại'
+]
+
+keywords_11 = [
+    'lão hóa',
+    'senescence',
+    'lá non',
+    'lá trưởng thành',
+    'quang hợp mạnh',
+    'chuyển dinh dưỡng về hạt',
+    'lúa chín vàng đuôi',
+    'hiện tượng sinh lý'
+]
+
+keywords_12 = [
+    'vi lượng',
+    'Kẽm',
+    'Bo',
+    'Đồng',
+    'Amino Acid',
+    'giảm stress',
+    'Silic',
+    'tư thế thẳng đứng',
+    'tối ưu hóa quang hợp'
+]

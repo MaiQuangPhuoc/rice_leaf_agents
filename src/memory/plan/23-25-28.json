@@ -1,0 +1,166 @@
+{
+  "plan_id": "d9532e7d-6cf7-4415-939f-6327138062de",
+  "user_id": "user_id",
+  "thread_id": "thread_id",
+  "disease": "đạo ôn lá",
+  "duration_days": 14,
+  "location": "Hà Nội",
+  "rice_stage": "đẻ nhánh",
+  "status": "detail",
+  "skeleton": [
+    {
+      "phase": "Giai đoạn 1: Khảo sát và xử lý khẩn cấp",
+      "duration_days": 4,
+      "main_content": "Khảo sát toàn ruộng 300m², xác định tỷ lệ lá bệnh, phun Tricyclazole lần 1, giảm yếu tố thuận lợi cho bệnh phát triển",
+      "expected_result": "Có đánh giá chính xác về hiện trạng bệnh, tốc độ phát sinh vết bệnh mới giảm"
+    },
+    {
+      "phase": "Giai đoạn 2: Kiểm soát lây lan",
+      "duration_days": 5,
+      "main_content": "Theo dõi khu vực nhiễm, kiểm tra lá mới, quản lý điều kiện ruộng phù hợp, phun Tricyclazole lần 2",
+      "expected_result": "Không xuất hiện ổ bệnh lớn mới, bệnh duy trì ổn định"
+    },
+    {
+      "phase": "Giai đoạn 3: Theo dõi sát",
+      "duration_days": 3,
+      "main_content": "Kiểm tra định kỳ, so sánh diễn biến bệnh, đánh giá hiệu quả xử lý",
+      "expected_result": "Bệnh không tái phát, lá mới phát triển bình thường"
+    },
+    {
+      "phase": "Giai đoạn 4: Ổn định sinh trưởng",
+      "duration_days": 2,
+      "main_content": "Theo dõi lá mới, đánh giá sức sinh trưởng, duy trì điều kiện ruộng phù hợp",
+      "expected_result": "Cây phục hồi và phát triển bình thường, không phát sinh ổ bệnh mới"
+    }
+  ],
+  "steps": [
+    {
+      "day": 1,
+      "phase": "Giai đoạn 1: Khảo sát và xử lý khẩn cấp",
+      "action": "Buổi sáng: Đi kiểm tra toàn bộ ruộng 300m², đếm số khóm bị bệnh trên 10 khóm mẫu ở 5 điểm khác nhau, chụp ảnh vết bệnh. Đánh dấu vùng nhiễm nặng bằng que cắm. Buổi chiều: Chuẩn bị bình phun 16 lít, vệ sinh bình, tính lượng thuốc cần dùng. Ghi chép vào sổ: tỷ lệ lá bệnh, vị trí ổ bệnh, màu sắc vết bệnh, thời tiết hôm nay",
+      "medicine": null,
+      "dosage": null,
+      "condition": "Khảo sát vào buổi sáng sớm 6-7h khi sương còn đọng trên lá để nhận diện vết bệnh rõ hơn",
+      "note": "Nếu tỷ lệ lá bệnh trên 20% thì báo ngay cho cán bộ khuyến nông, cân nhắc phun thuốc sớm hơn kế hoạch"
+    },
+    {
+      "day": 2,
+      "phase": "Giai đoạn 1: Khảo sát và xử lý khẩn cấp",
+      "action": "Buổi sáng: Kiểm tra lại vùng nhiễm nặng đã đánh dấu, đếm số vết bệnh mới. Buổi chiều: Vệ sinh đồng ruộng, cày vùi rơm rạ, dọn sạch cỏ dại ven bờ. Ghi chép vào sổ: diễn biến bệnh, tình trạng ruộng",
+      "medicine": null,
+      "dosage": null,
+      "condition": "Vệ sinh ruộng khi thời tiết khô ráo",
+      "note": "Đảm bảo ruộng sạch sẽ để giảm nguồn bệnh"
+    },
+    {
+      "day": 3,
+      "phase": "Giai đoạn 1: Khảo sát và xử lý khẩn cấp",
+      "action": "Buổi sáng sớm trước 8h: Phun Tricyclazole 75WP đều toàn bộ tán lá, chú ý phun kỹ vùng đánh dấu nhiễm nặng. Sau khi phun: Điều chỉnh mực nước ruộng xuống 3-5cm, giảm lượng đạm bón xuống 50% so với kế hoạch. Buổi chiều: Kiểm tra lại xem thuốc có bám đều không, ghi chép thời gian phun và lượng thuốc đã dùng",
+      "medicine": "Tricyclazole 75WP",
+      "dosage": "1.5 muỗng canh pha bình 16 lít, phun 2 bình cho 300m²",
+      "condition": "Phun khi không có gió mạnh, không mưa trong 4 giờ sau phun, nhiệt độ dưới 32°C",
+      "note": "Nếu trời mưa ngay sau khi phun dưới 1 giờ thì phải phun lại. Không phun khi sương mù dày vì thuốc không bám lá"
+    },
+    {
+      "day": 4,
+      "phase": "Giai đoạn 1: Khảo sát và xử lý khẩn cấp",
+      "action": "Buổi sáng: Kiểm tra hiệu quả phun thuốc, đếm số vết bệnh mới. Buổi chiều: Ghi chép vào sổ: diễn biến bệnh, hiệu quả xử lý, thời tiết hôm đó",
+      "medicine": null,
+      "dosage": null,
+      "condition": null,
+      "note": "Nếu bệnh vẫn tiến triển nặng, cần cân nhắc phun thuốc lần 2"
+    },
+    {
+      "day": 5,
+      "phase": "Giai đoạn 2: Kiểm soát lây lan",
+      "action": "Buổi sáng: Kiểm tra toàn bộ ruộng, xác định khu vực nhiễm nặng. Buổi chiều: Phun Tricyclazole 75WP lần 2, tập trung vào khu vực nhiễm nặng. Ghi chép vào sổ: thời gian phun, lượng thuốc đã dùng",
+      "medicine": "Tricyclazole 75WP",
+      "dosage": "1 muỗng canh pha bình 16 lít, phun 2 bình cho 300m²",
+      "condition": "Phun khi không có gió mạnh, không mưa trong 4 giờ sau phun, nhiệt độ dưới 32°C",
+      "note": "Đảm bảo phun đều toàn bộ tán lá"
+    },
+    {
+      "day": 6,
+      "phase": "Giai đoạn 2: Kiểm soát lây lan",
+      "action": "Buổi sáng: Kiểm tra hiệu quả phun thuốc, đếm số vết bệnh mới. Buổi chiều: Điều chỉnh mực nước ruộng phù hợp, bón phân cân đối. Ghi chép vào sổ: diễn biến bệnh, hiệu quả xử lý",
+      "medicine": null,
+      "dosage": null,
+      "condition": null,
+      "note": "Nếu bệnh vẫn tiến triển nặng, cần cân nhắc phun thuốc lần 3"
+    },
+    {
+      "day": 7,
+      "phase": "Giai đoạn 2: Kiểm soát lây lan",
+      "action": "Buổi sáng: Kiểm tra toàn bộ ruộng, xác định khu vực nhiễm nặng. Buổi chiều: Vệ sinh ruộng, dọn sạch cỏ dại. Ghi chép vào sổ: tình trạng ruộng, thời tiết hôm đó",
+      "medicine": null,
+      "dosage": null,
+      "condition": null,
+      "note": "Đảm bảo ruộng sạch sẽ để giảm nguồn bệnh"
+    },
+    {
+      "day": 8,
+      "phase": "Giai đoạn 3: Theo dõi sát",
+      "action": "Buổi sáng: Kiểm tra hiệu quả xử lý, đếm số vết bệnh mới. Buổi chiều: Ghi chép vào sổ: diễn biến bệnh, hiệu quả xử lý, thời tiết hôm đó",
+      "medicine": null,
+      "dosage": null,
+      "condition": null,
+      "note": "Nếu bệnh vẫn tiến triển nặng, cần cân nhắc phun thuốc bổ sung"
+    },
+    {
+      "day": 9,
+      "phase": "Giai đoạn 3: Theo dõi sát",
+      "action": "Buổi sáng: Kiểm tra toàn bộ ruộng, xác định khu vực nhiễm nặng. Buổi chiều: Điều chỉnh mực nước ruộng phù hợp. Ghi chép vào sổ: tình trạng ruộng",
+      "medicine": null,
+      "dosage": null,
+      "condition": null,
+      "note": "Đảm bảo ruộng sạch sẽ để giảm nguồn bệnh"
+    },
+    {
+      "day": 10,
+      "phase": "Giai đoạn 3: Theo dõi sát",
+      "action": "Buổi sáng: Kiểm tra hiệu quả xử lý, đếm số vết bệnh mới. Buổi chiều: Ghi chép vào sổ: diễn biến bệnh, hiệu quả xử lý, thời tiết hôm đó",
+      "medicine": null,
+      "dosage": null,
+      "condition": null,
+      "note": "Nếu bệnh vẫn tiến triển nặng, cần cân nhắc phun thuốc bổ sung"
+    },
+    {
+      "day": 11,
+      "phase": "Giai đoạn 4: Ổn định sinh trưởng",
+      "action": "Buổi sáng: Kiểm tra toàn bộ ruộng, xác định khu vực nhiễm nặng. Buổi chiều: Bón phân cân đối, điều chỉnh mực nước ruộng phù hợp. Ghi chép vào sổ: tình trạng ruộng",
+      "medicine": null,
+      "dosage": null,
+      "condition": null,
+      "note": "Đảm bảo ruộng sạch sẽ để giảm nguồn bệnh"
+    },
+    {
+      "day": 12,
+      "phase": "Giai đoạn 4: Ổn định sinh trưởng",
+      "action": "Buổi sáng: Kiểm tra hiệu quả xử lý, đếm số vết bệnh mới. Buổi chiều: Ghi chép vào sổ: diễn biến bệnh, hiệu quả xử lý, thời tiết hôm đó",
+      "medicine": null,
+      "dosage": null,
+      "condition": null,
+      "note": "Nếu bệnh vẫn tiến triển nặng, cần cân nhắc phun thuốc bổ sung"
+    },
+    {
+      "day": 13,
+      "phase": "Giai đoạn 4: Ổn định sinh trưởng",
+      "action": "Buổi sáng: Kiểm tra toàn bộ ruộng, xác định khu vực nhiễm nặng. Buổi chiều: Vệ sinh ruộng, dọn sạch cỏ dại. Ghi chép vào sổ: tình trạng ruộng",
+      "medicine": null,
+      "dosage": null,
+      "condition": null,
+      "note": "Đảm bảo ruộng sạch sẽ để giảm nguồn bệnh"
+    },
+    {
+      "day": 14,
+      "phase": "Giai đoạn 4: Ổn định sinh trưởng",
+      "action": "Buổi sáng: Kiểm tra hiệu quả xử lý, đếm số vết bệnh mới. Buổi chiều: Ghi chép vào sổ: diễn biến bệnh, hiệu quả xử lý, thời tiết hôm đó. Kết thúc kế hoạch",
+      "medicine": null,
+      "dosage": null,
+      "condition": null,
+      "note": "Đánh giá kết quả cuối cùng, rút kinh nghiệm cho vụ sau"
+    }
+  ],
+  "created_at": "2026-06-21T23:25:14.334277",
+  "updated_at": "2026-06-21T23:25:14.334277"
+}

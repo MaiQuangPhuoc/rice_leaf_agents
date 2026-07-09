@@ -1,0 +1,308 @@
+Mẫu đơn giản
+{
+  "template_level": "simple",
+  "plan_id": "template_simple_7d",
+  "user_id": "system",
+  "thread_id": "template",
+  "disease": "[ĐIỀN THEO BỆNH THỰC TẾ]",
+  "duration_days": 7,
+  "location": "Chưa xác định",
+  "rice_stage": "Chưa xác định",
+  "status": "skeleton",
+  "skeleton": [
+    "Giai đoạn 1: Kiểm tra và đánh giá tình trạng ruộng",
+    "Giai đoạn 2: Xử lý và theo dõi kết quả"
+  ],
+  "steps": [
+    {
+      "day": 1,
+      "action": "Khảo sát toàn bộ ruộng, ghi nhận dấu hiệu bệnh",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Luôn thực hiện",
+      "note": "Chú ý lá, bẹ lá và các khu vực ẩm thấp"
+    },
+    {
+      "day": 2,
+      "action": "Vệ sinh bờ ruộng, dọn cỏ dại và tàn dư thực vật",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Có cỏ dại hoặc lá lúa chết còn trên ruộng",
+      "note": "Giảm nơi trú ẩn của mầm bệnh"
+    },
+    {
+      "day": 3,
+      "action": "Phun thuốc phòng trị lần 1",
+      "medicine": "[ĐIỀN THUỐC PHÙ HỢP VỚI BỆNH]",
+      "dosage": "Pha 1 nắp chai cho 1 bình 16 lít, phun đều mặt lá",
+      "condition": "Có dấu hiệu bệnh hoặc điều kiện thời tiết thuận lợi cho bệnh",
+      "note": "Phun vào sáng sớm trước 9h hoặc chiều mát sau 4h"
+    },
+    {
+      "day": 5,
+      "action": "Kiểm tra lại ruộng sau phun",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Sau 48 giờ kể từ lần phun",
+      "note": "Quan sát xem vết bệnh có dừng lan không"
+    },
+    {
+      "day": 7,
+      "action": "Đánh giá kết quả và quyết định bước tiếp theo",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Kết thúc kế hoạch 7 ngày",
+      "note": "Nếu bệnh còn nặng → lập kế hoạch tiếp theo"
+    }
+  ],
+  "created_at": "2026-06-16T00:00:00Z",
+  "updated_at": "2026-06-16T00:00:00Z"
+}
+
+-------------------------
+
+Mẫu trung bình
+{
+  "template_level": "medium",
+  "plan_id": "template_medium_14d",
+  "user_id": "system",
+  "thread_id": "template",
+  "disease": "[ĐIỀN THEO BỆNH THỰC TẾ]",
+  "duration_days": 14,
+  "location": "Chưa xác định",
+  "rice_stage": "Chưa xác định",
+  "status": "skeleton",
+  "skeleton": [
+    "Giai đoạn 1: Đánh giá và chuẩn bị",
+    "Giai đoạn 2: Xử lý chủ động",
+    "Giai đoạn 3: Theo dõi và củng cố"
+  ],
+  "steps": [
+    {
+      "day": 1,
+      "action": "Khảo sát toàn bộ ruộng, đánh dấu khu vực có nguy cơ cao",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Luôn thực hiện",
+      "note": "Ghi chép lại tỷ lệ lá bị bệnh tại từng khu vực"
+    },
+    {
+      "day": 2,
+      "action": "Kiểm tra chế độ nước và điều chỉnh nếu cần",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Ruộng ngập sâu hoặc quá khô",
+      "note": "Giữ mực nước ổn định phù hợp giai đoạn lúa"
+    },
+    {
+      "day": 3,
+      "action": "Vệ sinh bờ ruộng, loại bỏ nguồn bệnh",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Có cỏ dại hoặc tàn dư thực vật",
+      "note": "Đặc biệt chú ý các góc ruộng ẩm thấp"
+    },
+    {
+      "day": 4,
+      "action": "Kiểm tra dự báo thời tiết 5-7 ngày tới",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Luôn thực hiện",
+      "note": "Nếu có mưa liên tục → tăng mức cảnh báo"
+    },
+    {
+      "day": 5,
+      "action": "Phun thuốc phòng trị lần 1",
+      "medicine": "[ĐIỀN THUỐC PHÙ HỢP VỚI BỆNH]",
+      "dosage": "Pha 1 nắp chai cho 1 bình 16 lít, phun đều mặt lá và bẹ lá",
+      "condition": "Nguy cơ bệnh trung bình hoặc cao",
+      "note": "Phun sáng sớm, tránh phun khi trời nắng gắt hoặc sắp mưa"
+    },
+    {
+      "day": 7,
+      "action": "Đánh giá hiệu quả sau phun lần 1",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Sau 48 giờ kể từ lần phun",
+      "note": "Đếm số lá mới bị bệnh so với ngày 1"
+    },
+    {
+      "day": 9,
+      "action": "Kiểm tra toàn bộ ruộng lần 2",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Luôn thực hiện",
+      "note": "Chú ý các ổ bệnh mới phát sinh"
+    },
+    {
+      "day": 10,
+      "action": "Phun thuốc lần 2 nếu cần",
+      "medicine": "[ĐIỀN THUỐC PHÙ HỢP — có thể đổi loại so với lần 1]",
+      "dosage": "Pha 1 nắp chai cho 1 bình 16 lít",
+      "condition": "Còn xuất hiện ổ bệnh mới hoặc thời tiết vẫn thuận lợi cho bệnh",
+      "note": "Có thể đổi thuốc để tránh nhờn thuốc"
+    },
+    {
+      "day": 12,
+      "action": "Kiểm tra và ghi nhận tình trạng ruộng",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Luôn thực hiện",
+      "note": "So sánh với ngày đầu để đánh giá hiệu quả tổng thể"
+    },
+    {
+      "day": 14,
+      "action": "Tổng kết kế hoạch, lưu hồ sơ",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Kết thúc kế hoạch 14 ngày",
+      "note": "Ghi lại thuốc đã dùng, liều lượng và kết quả để dùng cho vụ sau"
+    }
+  ],
+  "created_at": "2026-06-16T00:00:00Z",
+  "updated_at": "2026-06-16T00:00:00Z"
+}
+
+-------------------------
+
+Mẫu phức tạp
+{
+  "template_level": "complex",
+  "plan_id": "template_complex_21d",
+  "user_id": "system",
+  "thread_id": "template",
+  "disease": "[ĐIỀN THEO BỆNH THỰC TẾ]",
+  "duration_days": 21,
+  "location": "Chưa xác định",
+  "rice_stage": "Chưa xác định",
+  "status": "skeleton",
+  "skeleton": [
+    "Giai đoạn 1: Đánh giá toàn diện và lập bản đồ nguy cơ",
+    "Giai đoạn 2: Xử lý tích cực và kiểm soát lây lan",
+    "Giai đoạn 3: Củng cố, duy trì và phòng ngừa tái phát"
+  ],
+  "steps": [
+    {
+      "day": 1,
+      "action": "Khảo sát toàn bộ ruộng, lập bản đồ khu vực nguy cơ",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Luôn thực hiện",
+      "note": "Đánh dấu rõ khu vực bệnh nặng, trung bình, nhẹ"
+    },
+    {
+      "day": 2,
+      "action": "Kiểm tra lịch sử bón phân, đánh giá nguy cơ thừa đạm",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Lúa lá xanh đậm bất thường",
+      "note": "Thừa đạm làm tăng nguy cơ nhiều loại bệnh"
+    },
+    {
+      "day": 3,
+      "action": "Vệ sinh toàn bộ bờ ruộng và bên trong ruộng",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Có cỏ dại hoặc tàn dư thực vật",
+      "note": "Dọn sạch toàn bộ, không để lại ổ mầm bệnh"
+    },
+    {
+      "day": 4,
+      "action": "Điều chỉnh chế độ nước phù hợp",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Ruộng ngập sâu hoặc thoát nước kém",
+      "note": "Giảm độ ẩm kéo dài trong tán lúa"
+    },
+    {
+      "day": 5,
+      "action": "Kiểm tra dự báo thời tiết 10 ngày tới",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Luôn thực hiện",
+      "note": "Lên kế hoạch phun thuốc phù hợp với thời tiết"
+    },
+    {
+      "day": 6,
+      "action": "Phun thuốc phòng trị lần 1 — tập trung khu vực nguy cơ cao",
+      "medicine": "[ĐIỀN THUỐC PHÙ HỢP VỚI BỆNH]",
+      "dosage": "Pha 1 nắp chai cho 1 bình 16 lít, phun kỹ mặt lá và bẹ lá",
+      "condition": "Nguy cơ cao hoặc đã xuất hiện ổ bệnh",
+      "note": "Ưu tiên xử lý cục bộ trước, tránh phun toàn bộ ruộng khi chưa cần"
+    },
+    {
+      "day": 8,
+      "action": "Đánh giá hiệu quả lần 1, kiểm tra ổ bệnh mới",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Sau 48 giờ kể từ lần phun",
+      "note": "Ghi nhận số ổ bệnh mới so với ngày 6"
+    },
+    {
+      "day": 10,
+      "action": "Khảo sát toàn bộ ruộng lần 2",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Luôn thực hiện",
+      "note": "So sánh với bản đồ nguy cơ ngày 1"
+    },
+    {
+      "day": 11,
+      "action": "Phun thuốc lần 2 nếu cần",
+      "medicine": "[ĐIỀN THUỐC — có thể đổi loại so với lần 1]",
+      "dosage": "Pha 1 nắp chai cho 1 bình 16 lít",
+      "condition": "Còn ổ bệnh mới hoặc thời tiết vẫn thuận lợi cho bệnh",
+      "note": "Đổi thuốc nếu đã phun cùng loại 2 lần liên tiếp"
+    },
+    {
+      "day": 13,
+      "action": "Kiểm tra mức độ phục hồi của lúa",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Luôn thực hiện",
+      "note": "Quan sát lá mới có còn dấu hiệu bệnh không"
+    },
+    {
+      "day": 15,
+      "action": "Điều chỉnh bón phân nếu cần thiết",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Lúa sinh trưởng yếu sau xử lý bệnh",
+      "note": "Bón phân bổ sung giúp lúa phục hồi nhanh hơn"
+    },
+    {
+      "day": 16,
+      "action": "Khảo sát ruộng lần 3, đánh giá nguy cơ tái phát",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Luôn thực hiện",
+      "note": "Chú ý các khu vực từng bị bệnh nặng"
+    },
+    {
+      "day": 17,
+      "action": "Phun phòng ngừa lần 3 nếu thời tiết bất lợi kéo dài",
+      "medicine": "[ĐIỀN THUỐC PHÙ HỢP]",
+      "dosage": "Pha 1 nắp chai cho 1 bình 16 lít",
+      "condition": "Độ ẩm cao liên tục trên 85% hoặc mưa nhiều",
+      "note": "Chỉ phun khi thực sự cần, tránh lạm dụng thuốc"
+    },
+    {
+      "day": 19,
+      "action": "Đánh giá xu hướng bệnh toàn ruộng",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Luôn thực hiện",
+      "note": "Xác định bệnh đã được kiểm soát chưa"
+    },
+    {
+      "day": 21,
+      "action": "Tổng kết toàn bộ kế hoạch, lưu hồ sơ chi tiết",
+      "medicine": "Không sử dụng",
+      "dosage": "Không áp dụng",
+      "condition": "Kết thúc kế hoạch 21 ngày",
+      "note": "Lưu lại: thuốc đã dùng, số lần phun, kết quả — phục vụ vụ sau"
+    }
+  ],
+  "created_at": "2026-06-16T00:00:00Z",
+  "updated_at": "2026-06-16T00:00:00Z"
+}

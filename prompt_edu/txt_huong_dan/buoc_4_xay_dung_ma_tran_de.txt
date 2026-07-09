@@ -1,0 +1,314 @@
+# Bước 4: Xây dựng ma trận đề kiểm tra (Blueprint)
+
+## Mục tiêu
+
+Chuyển đổi **hồ sơ tri thức chương học** từ Bước 3 thành một **bản thiết kế đề thi chi tiết**, xác định chính xác:
+
+* Mỗi chương có bao nhiêu câu.
+* Mỗi bài có bao nhiêu câu.
+* Mỗi dạng bài có bao nhiêu câu.
+* Mỗi mức độ khó có bao nhiêu câu.
+
+Bước này **không sinh câu hỏi**.
+
+Bước này chỉ quyết định:
+
+```text
+Ra cái gì?
+Ra bao nhiêu?
+Ra ở mức độ nào?
+```
+
+---
+
+# Vai trò trong toàn hệ thống
+
+```text
+Bước 1
+Thu thập thông tin học sinh
+
+↓
+
+Bước 2
+Truy xuất tài liệu
+
+↓
+
+Bước 3
+Xây dựng hồ sơ tri thức
+
+↓
+
+Bước 4
+Xây dựng ma trận đề
+
+↓
+
+Bước 5
+Sinh sườn đề
+
+↓
+
+Bước 6
+Sinh câu hỏi và đáp án
+
+↓
+
+Bước 7
+Kiểm tra chất lượng và hoàn thành đề thi
+```
+
+---
+
+# Đầu vào
+
+## 1. Thông tin học sinh (Bước 1)
+
+Ví dụ:
+
+```yaml
+môn_học: Toán
+
+khối_lớp: 11
+
+mục_tiêu_điểm: 8
+
+số_câu:20
+
+phạm_vi:
+  - Chương Đạo hàm
+```
+
+---
+
+## 2. Hồ sơ tri thức (Bước 3)
+
+Ví dụ:
+
+```yaml
+chương: Đạo hàm
+
+bài_học:
+
+  - Đạo hàm đa thức
+
+  - Quy tắc đạo hàm
+
+  - Ứng dụng đạo hàm
+
+dạng_bài:
+
+  - Tính đạo hàm
+
+  - Đạo hàm hàm hợp
+
+  - Cực trị
+
+độ_khó:
+
+  - Dễ
+  - Trung bình
+  - Khó
+```
+
+---
+
+# Công việc thực hiện
+
+## 1. Phân bổ số câu theo bài học
+
+Ví dụ:
+
+```yaml
+Đạo hàm đa thức:7 câu
+
+Quy tắc đạo hàm:7 câu
+
+Ứng dụng đạo hàm:6 câu
+```
+
+---
+
+## 2. Phân bổ độ khó cho từng bài
+
+Ví dụ:
+
+```yaml
+Đạo hàm đa thức:
+
+  dễ:3
+
+  trung_bình:2
+
+  khó : 2
+```
+
+---
+
+## 3. Phân bổ theo dạng bài
+
+Ví dụ:
+
+```yaml
+Đạo hàm đa thức
+
+Dạng A1:2 : 0 : 0
+
+Dạng A2:1 : 2 : 0
+
+Dạng A3:0 : 0 : 2
+```
+
+Ý nghĩa:
+
+```text
+Dạng A1:
+2 dễ
+0 trung bình
+0 khó
+
+Dạng A2:
+1 dễ
+2 trung bình
+0 khó
+
+Dạng A3:
+0 dễ
+0 trung bình
+2 khó
+```
+
+---
+
+## 4. Kiểm tra tính hợp lệ
+
+Ví dụ:
+
+```yaml
+Bài A
+
+Dạng A1:2 : 0 : 0
+
+Dạng A2:1 : 2 : 0
+
+Dạng A3:0 : 0 : 2
+```
+
+Tổng:
+
+```text
+2 + 3 + 2 = 7 câu
+```
+
+Phải khớp với:
+
+```yaml
+Bài A:7 câu
+```
+
+---
+
+# Đầu ra
+
+Ví dụ:
+
+```yaml
+chương: Đạo hàm
+
+tổng_số_câu: 20
+
+bài_học:
+
+  - tên: Đạo hàm đa thức
+
+    số_câu: 7
+
+    độ_khó:
+      dễ: 3
+      trung_bình: 2
+      khó: 2
+
+    dạng_bài:
+
+      - tên: Tính đạo hàm đa thức
+
+        dễ: 2
+        trung_bình: 0
+        khó: 0
+
+      - tên: Tính đạo hàm nhiều hạng tử
+
+        dễ: 1
+        trung_bình: 2
+        khó: 0
+
+      - tên: Bài toán biến đổi
+
+        dễ: 0
+        trung_bình: 0
+        khó: 2
+
+  - tên: Quy tắc đạo hàm
+
+    số_câu: 7
+
+    ...
+```
+
+---
+
+# Ý nghĩa của đầu ra
+
+Sau khi hoàn thành Bước 4, hệ thống đã biết chính xác:
+
+```text
+Cần sinh bao nhiêu câu.
+```
+
+Ví dụ:
+
+```text
+Tính đạo hàm đa thức
+→ 2 câu dễ
+
+Tính đạo hàm nhiều hạng tử
+→ 1 câu dễ
+→ 2 câu trung bình
+
+Bài toán biến đổi
+→ 2 câu khó
+```
+
+---
+
+# Điều Bước 4 KHÔNG làm
+
+❌ Chưa sinh đề.
+
+❌ Chưa sinh đáp án.
+
+❌ Chưa tạo bẫy.
+
+❌ Chưa viết câu hỏi.
+
+❌ Chưa lấy lại tài liệu.
+
+---
+
+# Kết quả cuối cùng
+
+Bước 4 tạo ra một:
+
+```text
+Bản thiết kế đề thi chi tiết
+```
+
+trong đó xác định đầy đủ:
+
+* Chương nào được kiểm tra.
+* Bài nào được kiểm tra.
+* Dạng bài nào được kiểm tra.
+* Mỗi dạng bài có bao nhiêu câu.
+* Mỗi dạng bài có độ khó nào.
+
+Đây sẽ là đầu vào trực tiếp cho **Bước 5: Xây dựng sườn đề và kế hoạch sinh câu hỏi**.

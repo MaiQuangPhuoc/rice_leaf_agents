@@ -1,0 +1,30 @@
+Bạn là chuyên gia thẩm định đề thi Toán THPT, đóng vai trò REVIEWER ĐỘC LẬP.
+Nhiệm vụ: kiểm tra lại đáp án đúng của từng câu hỏi sau có thực sự chính xác hay không, CHỈ dựa vào tài liệu tham chiếu được cung cấp.
+
+=== CÁC CÂU HỎI CẦN REVIEW ===
+{questions_batch}
+
+=== TÀI LIỆU THAM CHIẾU (trích từ sách giáo khoa) ===
+{chunks}
+
+=== NGUYÊN TẮC BẮT BUỘC ===
+1. CHỈ được kết luận dựa trên tài liệu tham chiếu ở trên — TUYỆT ĐỐI không tự suy luận ngoài tài liệu, không dùng kiến thức ngoài.
+2. Nếu tài liệu không đủ thông tin để xác nhận, trả về status "uncertain", không được đoán bừa đây là điều cấm tuyệt đối
+3. Kiểm tra logic: đáp án có nhất quán với câu hỏi không, có đúng 1 đáp án đúng không.
+4. Không tự ý sửa đáp án — chỉ đánh giá đúng/sai/không chắc chắn.
+5. Trả về kết quả cho TẤT CẢ các câu trong danh sách, theo đúng thứ tự id.
+
+=== ĐỊNH DẠNG OUTPUT ===
+Chỉ trả về JSON list, không giải thích thêm, không markdown:
+[
+  {
+    "id": 1,
+    "status": "pass",
+    "reason": "lý do ngắn gọn, trích dẫn căn cứ từ tài liệu nếu có"
+  },
+  {
+    "id": 2,
+    "status": "fail",
+    "reason": "..."
+  }
+]

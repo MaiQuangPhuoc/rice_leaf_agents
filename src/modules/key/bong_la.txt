@@ -1,0 +1,152 @@
+keywords_1 = [
+    'Microdochium oryzae',
+    'Rhynchosporium oryzae',
+    'Monographella albescens',
+    'Nấm nang',
+    'Ascomycetes',
+    'bào tử vô tính',
+    'hình lưỡi liềm',
+    '1 vách ngăn',
+    'hạt giống',
+    'tàn dư cây bệnh'
+]
+
+keywords_2 = [
+    'chóp lá',
+    'bìa lá',
+    'vòng vân đồng tâm',
+    'zonation',
+    'vân gỗ',
+    'vỏ sò',
+    'xanh sũng nước',
+    'xanh ô-liu',
+    'dải màu nâu đậm',
+    'trắng xám'
+]
+
+keywords_3 = [
+    'phytotoxins',
+    'hoại sinh bán phần',
+    'sợi nấm',
+    'mạch dẫn',
+    'mất khả năng quang hợp',
+    'nguồn bệnh sơ cấp',
+    'vỏ trấu',
+    'bắn tóe giọt mưa',
+    'nước tưới tiêu',
+    'tiếp xúc lá'
+]
+
+keywords_4 = [
+    'ẩm ướt',
+    'mưa nhiều',
+    'trời âm u',
+    '23-30°C',
+    'rách lá',
+    'côn trùng cắn phá',
+    'thừa Đạm',
+    'lá mềm yếu',
+    'độ ẩm dưới tán lá',
+    'gieo sạ dày'
+]
+
+keywords_5 = [
+    'lá đòng',
+    'lá công năng',
+    'giảm quang hợp',
+    'tích lũy tinh bột',
+    'lem lép hạt',
+    'vỏ trấu',
+    'biến màu nâu',
+    'hạt lửng',
+    'gãy nát',
+    'giảm giá trị thương phẩm'
+]
+
+keywords_6 = [
+    'xử lý hạt giống',
+    'ngâm nước ấm',
+    'thuốc xử lý giống',
+    'nguồn bệnh lưu tồn',
+    'sạ thưa',
+    'cấy hàng rộng',
+    'giảm độ ẩm cục bộ',
+    'lây lan qua tiếp xúc lá',
+    'dọn sạch cỏ dại',
+    'tiêu hủy rơm rạ'
+]
+
+keywords_7 = [
+    'lá đứng',
+    'cứng cây',
+    'thời gian sinh trưởng ngắn',
+    'giống xác nhận sạch bệnh',
+    'áp lực bệnh cao',
+    'QTL',
+    'Quantitative Trait Loci',
+    'tính kháng bệnh',
+    'lai tạo giống'
+]
+
+keywords_8 = [
+    'Kali',
+    'đón đòng',
+    'Silic',
+    'silic hóa',
+    'biểu bì lá',
+    'sợi nấm xâm nhập',
+    'cân đối NPK',
+    'bảng so màu lá lúa',
+    'LCC',
+    'bón muộn'
+]
+
+keywords_9 = [
+    'Benomyl',
+    'Carbendazim',
+    'Propiconazole',
+    'Difenoconazole',
+    'Triazole',
+    'lưu dẫn',
+    'Thiophanate-methyl',
+    'nội hấp',
+    'Mancozeb',
+    'tiếp xúc'
+]
+
+keywords_10 = [
+    'Microdochium oryzae',
+    'vòng vân',
+    'zonation',
+    'giọt dịch',
+    'ooze',
+    'cháy bìa lá',
+    'bệnh vi khuẩn',
+    'phân biệt triệu chứng'
+]
+
+keywords_11 = [
+    'giai đoạn mạ',
+    'đẻ nhánh tối đa',
+    'lá già gần gốc',
+    'chóp lá tổn thương',
+    'làm đòng',
+    'trổ',
+    'Booting',
+    'Heading',
+    'cháy lá đòng',
+    'lem lép hạt'
+]
+
+keywords_12 = [
+    'Canxi',
+    'vách tế bào',
+    'độc tố nấm',
+    'Silic hữu hiệu',
+    'lớp giáp cơ học',
+    'lá mới',
+    'phân bón lá chứa Đạm',
+    'chất kích thích sinh trưởng',
+    'bổ sung qua gốc',
+    'Kali'
+]
