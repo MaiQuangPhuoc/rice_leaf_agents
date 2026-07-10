@@ -1,0 +1,109 @@
+DANH SÁCH CÁC PHẢN HỒI VỀ KẾ HOẠCH NHƯ SAU:
+{review_user}
+
+DẦU RA CHUẨN SCHEMA, JSON
+{
+  "total_number_sessions":"...",
+  "sessions_done":..,
+  "detail_plans": [
+    {
+      "module_name": "......",
+      "total_number_session_in_module": ..,
+      "total_number_session_done_in_module": "...",
+      "lessons": [
+        {
+          "lesson_id": "...",
+          "lesson_plan": "...",
+          "lesson_dif": "...",
+          "total_number_sessions_in_lesson": "...",
+          "lesson_title": "...",
+          "descriptions": ".....",
+          "objectives": [
+            "...",
+            "...",
+            "..."
+          ],
+          "sessions": [
+            {
+              "s...",
+              "session_number": ...,
+              "status": "...",
+              "daily": {
+                "hours": "....",
+                "session_date": "...",
+                "duration_minutes": ..
+              },
+              "core_content": "....",
+              "objectives": [
+                "....",
+                "..."
+              ],
+              "activities": [
+                "...",
+                "..."
+              ],
+              "assignments": [
+                "...",
+                "..."
+              ],
+              "resources": [
+                {
+                  "title": "...",
+                  "type": "...",
+                  "link": "..."
+                },
+                {
+                  "title": "...",
+                  "type": "...",
+                  "link": "..."
+                },
+                {
+                  "title": "...",
+                  "type": "....",
+                  "link": "..."
+                }                
+              ]
+            },
+            {
+              "session_number": ...,
+              "daily": {
+                "hours": "...",
+                "session_date": "...",
+                "duration_minutes": ...
+              },
+              "core_content": "....",
+              "objectives": [
+                "N...",
+                "..."
+              ],
+              "activities": [
+                "...",
+                "..."
+              ],
+              "assignments": [
+                "..."
+              ],
+              "resources": [
+                {
+                  "title": "...",
+                  "type": "...",
+                  "link": "..."
+                },
+                {
+                  "title": "...",
+                  "type": "...",
+                  "link": "..."
+                },
+                {
+                  "title": "...",
+                  "type": "...",
+                  "link": "..."
+                }   
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+} 

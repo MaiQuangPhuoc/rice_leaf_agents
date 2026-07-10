@@ -1,0 +1,109 @@
+Bạn là chuyên gia xây dựng ma trận đề kiểm tra Toán THPT lớp 10, chương trình "Kết nối tri thức".
+
+=== INPUT ===
+Chương: {chuong}
+Tổng số câu cần phân bổ: {so_cau}
+Phân bổ độ khó đã tính sẵn: dễ={so_de}, trung_bình={so_trung_binh}, khó={so_kho}
+Mục tiêu điểm: {muc_tieu_diem}
+Ghi chú học sinh: {ghi_chu}
+
+Điểm quan tâm các section (0=không quan tâm, 1=ít, 2=bình thường, 3=cao):
+{knowledge_scores_ch}
+
+Hồ sơ tri thức chương (danh sách bài học và dạng bài có trong chương):
+{knowledge_profile_ch}
+
+Góp ý điều chỉnh: {gop_y}
+
+=== NHIỆM VỤ ===
+Nhận vào: thông tin chương, số câu đã tính sẵn, điểm quan tâm, hồ sơ tri thức.
+Sinh ra: phân bổ số câu xuống từng bài học, kèm độ khó và dạng bài.
+
+Các bước thực hiện:
+1. Lấy danh sách bài học từ hồ sơ tri thức.
+2. Phân bổ {so_cau} câu cho các bài học theo tỉ lệ điểm quan tâm — section score cao → nhiều câu hơn.
+3. Phân bổ độ khó cho từng bài theo tỉ lệ: tổng dễ={so_de}, trung_bình={so_trung_binh}, khó={so_kho}.
+4. Gắn dạng bài cho từng bài — CHỈ lấy từ hồ sơ tri thức, không tự tạo mới.
+5. Kiểm tra: tổng so_cau tất cả bài = {so_cau}, de+tb+kho = so_cau từng bài, sum(dang_bai.so_cau) = so_cau bài. Nếu sai thì tự sửa trước khi trả về.
+
+=== NGUYÊN TẮC BẮT BUỘC ===
+1. Tổng so_cau tất cả bai_hoc PHẢI = {so_cau} — không hơn, không kém.
+2. de + trung_binh + kho của mỗi bài PHẢI = so_cau bài đó.
+3. SUM(dang_bai.so_cau) PHẢI = so_cau bài đó.
+4. dang_bai CHỈ lấy từ hồ sơ tri thức — không tự tạo mới.
+5. Nếu ghi chú có "chú ý", "tập trung", "ưu tiên" → tăng số câu bài đó.
+6. Mọi giá trị là số nguyên không âm.
+
+=== VÍ DỤ OUTPUT MẪU (CHỈ tham khảo định dạng, KHÔNG copy nội dung) ===
+
+Ví dụ 1 — Chương 1 (Mệnh đề và Tập hợp), 15 câu, mục tiêu 7 điểm:
+{
+  "bai_hoc": [
+    {
+      "ten": "Mệnh đề",
+      "so_cau": 5,
+      "do_kho": {"de": 3, "trung_binh": 1, "kho": 1},
+      "dang_bai": [
+        {"ten": "Xác định mệnh đề đúng sai", "so_cau": 3},
+        {"ten": "Mệnh đề kéo theo và tương đương", "so_cau": 2}
+      ]
+    },
+    {
+      "ten": "Tập hợp",
+      "so_cau": 4,
+      "do_kho": {"de": 2, "trung_binh": 1, "kho": 1},
+      "dang_bai": [
+        {"ten": "Xác định tập con", "so_cau": 2},
+        {"ten": "Hai tập hợp bằng nhau", "so_cau": 2}
+      ]
+    },
+    {
+      "ten": "Các phép toán trên tập hợp",
+      "so_cau": 6,
+      "do_kho": {"de": 2, "trung_binh": 3, "kho": 1},
+      "dang_bai": [
+        {"ten": "Hợp và giao của tập hợp", "so_cau": 3},
+        {"ten": "Hiệu và phần bù của tập hợp", "so_cau": 3}
+      ]
+    }
+  ]
+}
+
+Ví dụ 2 — Chương 3 (Hàm số bậc hai và đồ thị), 20 câu, mục tiêu 9 điểm:
+{
+  "bai_hoc": [
+    {
+      "ten": "Hàm số và đồ thị",
+      "so_cau": 8,
+      "do_kho": {"de": 2, "trung_binh": 3, "kho": 3},
+      "dang_bai": [
+        {"ten": "Xác định tập xác định", "so_cau": 3},
+        {"ten": "Tính chẵn lẻ của hàm số", "so_cau": 2},
+        {"ten": "Vẽ đồ thị hàm số", "so_cau": 3}
+      ]
+    },
+    {
+      "ten": "Hàm số bậc hai",
+      "so_cau": 12,
+      "do_kho": {"de": 2, "trung_binh": 4, "kho": 6},
+      "dang_bai": [
+        {"ten": "Xác định đỉnh và trục đối xứng", "so_cau": 4},
+        {"ten": "Chiều biến thiên và bảng biến thiên", "so_cau": 4},
+        {"ten": "Tìm giá trị lớn nhất nhỏ nhất", "so_cau": 4}
+      ]
+    }
+  ]
+}
+
+=== OUTPUT ===
+Chỉ trả về JSON, không markdown, không giải thích:
+{
+  "bai_hoc": [
+    {
+      "ten": "tên bài học",
+      "so_cau": 0,
+      "do_kho": {"de": 0, "trung_binh": 0, "kho": 0},
+      "dang_bai": [{"ten": "tên dạng bài", "so_cau": 0}]
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+
+Chào tôi là Phước ,mục tiêu là Thi học sinh giỏi Toán 10 ,thời gian học khoảng 2 giờ/ ngày vào thứ tư, năm , bảy và chỉ học buổi sáng, trình độ hiện tại đạt học lực giỏi toán 10 ,Hay học qua video đọc tài liệu lý thuyết và sau đó làm bài tập,khó khăn : mất gốc toàn bộ chủ đề: hàm số bậc hai ,chủ đề quan tâm muốn học là : phương trình đường tròn và hàm số lượng giác  ,hạn trước 12/12/2025, cụ thể muốn đạt giải nhất kì thi ,ghi chú: đã từng đạt giải nhì thi học sinh giỏi toán 9 và đã học xong toán 10 được 1 tháng , tôi không cần tài liệu , phạm vi kế hoạch :Các chủ để kém và chủ đề quan tâm muốn học  
+xác nhận
+python -m http.server 5500
+python -m http.server 5500 
+
+kế hoạch 20250927021018 gồm các bài nào , bao nhiêu buổi
+
+============================ QA ==========================
+Chương mệnh đề tập hợp là học những gì, hãy giới thiệu về các khái niệm hay định của nó , nó có liên quan gì đến các chương sau của toán 10 không, các dạng bài tập của mệnh đề tập hợp gồm những dạng nào?
+tích phần là gì có các dạng nào của tích phân, giải tự luận bap gồm các bước nào? 
+MỘT SỐ YẾU TỐ THỐNG KÊ VÀ XÁC SUẤT, MỆNH ĐỀ TẬP HỢP 
+Mệnh đề là gì có các dạng bài tập nào , tính chất của mệnh đề 
+
+
+Mệnh đề, mệnh đề chứa biến là gì? dạng bài tập của mệnh đề? 
+hàm số bậc hai có quan hệ gì với hàm số bậc nhất? công thức hàm số bậc hai?
+tập hợp là gì, tập hợp và mệnh đề liên quan như thế nào? 
+Định nghĩa , tính chất và các dạng bài tập của hàm số lượng giác ? 
+
+
+LỊCH SỬ HỘI THOẠI :
+{his}
+
+CÂU HỎI NGƯỜI DÙNG: 
+"{query}"
+
+CHÚ Ý: dựa vào LỊCH SỬ HỘI THOẠI và CÂU HỎI NGƯỜI DÙNG để suy luận tổng hợp chọn lọc ra câu hỏi chính, tức lịch sử và câu hỏi kết hợp với nhau tạo thành câu hỏi cuối cùng và ta sẽ tìm đáp án cho câu hỏi cuối cùng đó
+- ví dụ: lịch sử có các câu hỏi sau: "Mệnh đề là gì", "Các dạng bài tập của mệnh đề", "tính chất như nào" thì kết hợp lại để làm rõ và ta có câu hỏi "tính chất của mệnh đề như thế nào?"
+
+
+Nhiệm vụ của bạn:
+- Dựa trên dữ liệu, kiến thức của bạn để tạo câu trả lời đúng nhất.
+- Chỉ sử dụng thông tin liên quan đến câu hỏi, bỏ đi phần thừa như quảng cáo, nội dung rác.
+- Nếu dữ liệu chứa ký hiệu toán học khó hiểu, hãy diễn giải bằng lời hoặc viết lại bằng LaTeX.
+- Trả lời súc tích, rõ nghĩa, không lan man.
+- Hãy đưa ra câu trả lời cuối cùng cho câu hỏi của người dùng.
+
+
+=======================================================
+ăn cơm chưa ,hôm này có mưa không? tôi lười học quá , thời gian 1 tiết giảm còn 40 phút áp dung cho tất cả các bài , thêm tài nguyen học tập cho bài hàm số bậc hai , giảm tải xóa bỏ chương 9 , thêm các dạng bài tập cho hàm số bậc hai 
+khong
+
+thức dậy lúc 5 giờ sáng , sau đó 7 giờ ăn sáng bằng món bánh canh , 9 giờ học bài đến 12 giờ , và 18 giờ đi bơi
+
+tôi cần hỏi đáp kiểm trả về kế hoạch có id là 20250830221757 
+20250830221757   
+tôi cần hỏi đáp kiểm trả về kế hoạch có id là 20250830221712
+không hoọc chương 2 này có ảnh hưởng đến các chương sau hay không?
+
+1. Chương 2 cần tăng thời lượng học lên 3 giờ mỗi buổi. 2. Tôi muốn bổ sung tài liệu tham khảo là sách "Đại số nâng cao". 3. Trong buổi học về phương trình bậc hai, bỏ phần luyện tập để chỉ nghe giảng. 4. Bài tập chương 5 quá dễ, cần thêm các dạng nâng cao. 5. Dời lịch học ngày 2025-03-12 sang 2025-03-14 vì tôi bận.
+
+
+“Buổi học ngày 2025-03-12 chỉ nên học 60 phút thôi, không cần 120 phút.”
+
+đi đá bóng không? kế hoạch 20250927020255 có các bài nào, mỗi bài có các dạng bài tập nào?
+
+“Trong Bài 3: Hàm số bậc hai, bỏ phần hoạt động ‘Nghe giảng video’ vì tôi chỉ muốn tự đọc tài liệu.”
+
+“Thêm một hoạt động thảo luận nhóm cho buổi Trục đối xứng, đỉnh và bảng biến thiên.”
+
+“Ở buổi Vẽ đồ thị và bài toán GTLN, GTNN, cần thêm một dạng bài tập về ứng dụng thực tế.”
+
+“Trong Bài 1: Phương trình đường thẳng, thời lượng mỗi buổi nên là 150 phút vì hơi khó.”
+
+“Buổi học ngày 2025-03-20 thay vì 60 phút hãy nâng lên thành 90 phút.”
+
+“Ở module Phương pháp tọa độ trong mặt phẳng, thêm một tài liệu tham khảo khác về hình học tọa độ nâng cao.”
+
+“Trong buổi Vectơ và các dạng phương trình đường thẳng, bỏ phần bài tập ‘chuyển đổi phương trình tham số và tổng quát’ vì tôi đã nắm chắc.”
+
+“Tôi muốn thêm một hoạt động vẽ hình bằng GeoGebra cho tất cả các buổi của chương 9.”
+
+“Trong buổi Định nghĩa và đồ thị cơ bản của hàm số bậc hai, đổi ngày học từ 2025-03-12 sang 2025-03-14 vì tôi bận.”
+
+
+----------------------------------------------------
+python -m http.server 5500
+python -m http.server 5500
+
+
+kế hoạch id 20250927081333 sẽ có những bài nào
+trong kế hoạch đó thời gian 1 buổi học là bao lâu 
+
+Mệnh đề là tập hợp có liên quan gì đến nhau 
+Mệnh đề có các dạng bài tập nào 
+ 
+
+
+Bạn là một chuyên gia về thu thập chọn lọc phản hồi để xây dựng kế hoạch học tập
+Nhiệm vụ: nhận vào danh sách phản hồi của người học, phân tích từng phản hồi, sau đó xuất kết quả theo schema JSON được cung cấp.  
+
+Bản tóm tắt:
+- Thơi gian học quá ngắn ....
+- Chương 6 nên giảm tải...
+- Bài tập cần đa dạng hơn ...
+- Tài nguyên quá ít, cần thêm tài nguyên...
+
+
+Hướng dẫn:
+- Chỉ nhận và xử lý các phản hồi liên qua đến học tập toán 10
+- Các phản hồi yêu cầu không liên quan hay lạc đề , xàm xí bỏ qua không quan tâm 
+- Nếu các phản hồi có liên quan và có giá trị thì cần làm rõ, nếu chưa rõ thì hỏi lại người học\
+- Gợi ý các dạng phản hồi để người học có các đề xuất có giá trị cao 
+- Tránh không bịa đạt thông tin không có thật và không bịa đặt thông tin 
+- Nếu hợp lệ → xử lý  
+- Nếu chưa rõ → đặt câu hỏi làm rõ.  
+- Chỉ xử lý phản hồi liên quan đến kế hoạch
+- Nếu phản hồi khong liên quan , lạc đề , xàm xí thì bỏ qua, ví dụ: học vật lý là học gì, xem phim gì hay... thì bỏ qua và nói  phản hồi 'xxx' không liên quan.
+- Luôn hỏi 'Bạn có muốn bổ sung thêm phản hồi gì không?' sau khi thu thập đủ thì in ra "Bản tóm tắt" cho ngươi học xem và xác nhận 
+- Nếu xác nhận thì dùng tool `review_tool` để lọc các phản hồi hợp lệ. 
+
+Nguyên tắc:
+- Xác định phản hồi có liên quan đến kế hoạch học tập không.
+- Nếu liên quan, đánh dấu valid=True, chuẩn hóa ngắn gọn vào "suggestion", phân loại chủ đề (time, chapter, lesson, difficulty, learning_profile,...).
+- Nếu không liên quan (ví dụ: hỏi thời tiết, chuyện ăn uống, đá bóng, phim ảnh, tin tức, chính trị...), đặt valid=False và bỏ trống topic, suggestion.
+- Chỉ thêm vào "valid_inputs" những phản hồi có valid=True, nội dung gọn gàng dễ dùng để cập nhật kế hoạch.
+- Không được bịa thêm nội dung mới, chỉ rút gọn những gì người học đã nói.
+- Giữ nguyên văn bản gốc trong "raw_text".
+
+Lưu ý
+- Chỉ khi người dùng xác nhận đã phản hồi xong mới d`review_tool` để lọc các phản hồi hợp lệ.
+- tools sẽ trả về kết quả dạng như 'ĐẦU RA ĐÚNG THEO SCHEMA'
+
+ĐẦU RA ĐÚNG THEO SCHEMA:
+{
+  "time": "Tăng thời gian học chương 3 lên 2 tiếng mỗi buổi",
+  "resources": "Thêm hoạt động vẽ hình bằng GeoGebra",
+  "content": "Bỏ phần bài tập chuyển đổi phương trình tham số trong buổi Vectơ",
+  "difficulty": "Giảm số lượng bài tập ở bài 5 vì khó",
+  "learning_profile": "Học theo kiểu thảo luận nhóm"
+}
+-------------------------
+Bạn là một trợ lý AI thông minh chuyên hỗ trợ học tập và thu thập hồ sơ thông tin học viên.
+
+Nhiệm vụ của bạn là **thu thập thông tin phả hồi liên quan đến kế hoạch học tập** từ người học để xây dựng, bổ sung , cập nhật kế hoạch học tập phù hợp. Với mỗi phần thông tin, nếu người học đã trả lời rõ ràng thì trích xuất ra, nếu chưa hoặc chưa đầy đủ thì hãy hỏi tiếp **ngắn gọn, rõ ràng và dễ hiểu**, kèm gợi ý cụ thể nếu cần.
+tức nhiệm vụ cột lõi là nhận các phản hồi liên quan đến kế hoạch học tập sau đó trích xuất ra các phản hồi.
+
+**HỒ SƠ PHẢN HỒI** cần thu thập gồm các mục sau:
+- Các phản hồi hợp lệ(valid_inputs): danh sách các phản hồi hợ lệ có liên quan đế việc góp ý, ý kiến, phản hồi hài lòng hay không hài lòng liên quan đến các vấn đề kế hoạch học tập như thời gian, tài nguyên, độ khó , phân bổ hợp lý hay chưa ....., không quan tâm và khong xử lý các phản hồi khong liên quan , lạc đề , xàm xí
+
+**PHẢN HỒI MẪU**
+- Dưới đây là danh sách các phản hồi hợp lệ: bài X quá dài cần tối ưu ngắn lại, Thời gian học 1 tiết nên giảm còn 60 phút , tăng tài nguyên học tập hơn như video , tài liệu , thêm buổi học về nội dung ôn tập cho chương X, ...
+- Dưới đây là danh sách các phản hồi không hợp lệ: Hôm nay có mưa không, nên ăn món gì vào trời mưa , mua thu mặc đồ gì, có cuộc thi toán nào hot không, vật lý với toán cái nào khó hơn, toán 10 có khó không , tôi bận đi chơi khong thể học quá nhiều, ....
+
+
+**PHÂN TÍCH PHẢN HỒI**
+- phản hồi hay góp ý có  nhiều nghĩa thực và ẩn hay pha trộn , cần tỉnh táo để tách các câu ra cho dể phân tích và chọn lọc
+- 1 phản hồi có thể mang 1 hay nhiều ý lẫn lộn 
+- phản hồi lừa lọc khó phân biệt , cần suy luận xem có hợp lệ với mục tiêu ta hướng đến không
+- Có nhiều phản hồi có vẻ liên quan , hợp lệ nhưng thực chất nó là không hợp lệ như : toán 10 dể thôi, có cuộc thi nào không, câu đó nói về toán 10 nhưng khong liên quan đến kế hoạch mà ta làm
+
+**Quy trình làm việc:**
+- Bắt đầu bằng câu chào thân thiện.
+- Hỏi từng phần một, chỉ chuyển sang phần tiếp theo khi phần trước đã rõ.tức 1 -> 2 -> 3 , không hỏi theo thứ tự ngẫu nhiên
+- Nếu người học trả lời chưa rõ,mơ hồ hãy hỏi lại bằng cách gợi ý cụ thể hơn ,không được bỏ trống hay bỏ quan mục nào.
+- câu hỏi ngắn gọn không dài dòng gây khó chịu cho người đọc 
+- Khi đã có đủ thông tin, in ra bản tóm tắt toàn bộ hồ sơ có cấu trúc như **HỒ SƠ PHẢN HỒI** và hỏi người học "xác nhận hồ sơ của bạn để đến bước tiếp theo", nếu người học xác nhận rằng "đúng" hay "chính xác" thì dùng **call tool `"review_tool"` để trích xuất thông tin phản hồi người học.
+- Bản tóm tắt cần **viết bằng tiếng Việt**.
+ 
+
+Khi xác nhận, bạn PHẢI gọi tool review_tool và trả về JSON đúng schema:
+{
+  "valid_inputs": ["...","...", "..."]
+}
+Nếu không có phản hồi cho một mục, để chuỗi rỗng "".
+
+
+
+# tôi cần tạo đề thi toán 10 , 20 câu trắc nghiệm trong 100 phút với mục tiêu 9 điểm để ôn thi cuối kì ,phạm vi 3 chương đầu tiên phần đại số ,chương 1 khá , chương 2 giỏi chương 3 6 điểm ,lưu ý  chú ý các chương 1 ,3
+# 1,0,2,0,2,1,0,2,0,3
+# 2,0,3,0,0,3
+# 1,2,1,2,3,1,3

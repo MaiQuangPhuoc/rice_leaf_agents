@@ -1,0 +1,103 @@
+{
+  "chương 1": {
+    "Mệnh đề": [
+      "Mệnh đề",
+      "Mệnh đề chứa biến",
+      "Mệnh đề phủ định",
+      "Mệnh đề kéo theo",
+      "Mệnh đề đảo. Hai mệnh đề tương đương"
+    ],
+    "Tập hợp": [
+      "Nhắc lại về tập hợp",
+      "Tập con và hai tập hợp bằng nhau",
+      "Một số tập con của tập hợp số thực"
+    ],
+    "Các phép toán trên tập hợp": [
+      "Hợp và giao của các tập hợp",
+      "Hiệu của hai tập hợp, phần bù của tập con"
+    ]
+  },
+  "chương 2": {
+    "Bất phương trình bậc nhất hai ẩn": [
+      "Khái niệm bất phương trình bậc nhất hai ẩn",
+      "Nghiệm của bất phương trình bậc nhất hai ẩn",
+      "Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn"
+    ],
+    "Hệ bất phương trình bậc nhất hai ẩn": [
+      "Khái niệm hệ bất phương trình bậc nhất hai ẩn",
+      "Biểu diễn miền nghiệm của hệ bất phương trình bậc nhất hai ẩn",
+      "Tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của biểu thức F = ax + by trên một miền đa giác"
+    ]
+  },
+  "chương 3": {
+    "Hàm số và đồ thị": [
+      "Hàm số. Tập xác định và tập giá trị của hàm số",
+      "Đồ thị hàm số",
+      "Hàm số đồng biến, hàm số nghịch biến"
+    ],
+    "Hàm số bậc hai": [
+      "Hàm số bậc hai",
+      "Đồ thị hàm số bậc hai",
+      "Sự biến thiên của hàm số bậc hai",
+      "Ứng dụng của hàm số bậc hai"
+    ]
+  },
+  "chương 4": {
+    "Giá trị lượng giác của một góc từ 0° đến 180°": [
+      "Giá trị lượng giác",
+      "Quan hệ giữa các giá trị lượng giác của hai góc bù nhau",
+      "Giá trị lượng giác của một số góc đặc biệt"
+    ],
+    "Định lí côsin và định lí sin": [
+      "Định lí côsin trong tam giác",
+      "Định lí sin trong tam giác",
+      "Các công thức tính diện tích tam giác"
+    ],
+    "Giải tam giác và ứng dụng thực tế": [
+      "Giải tam giác",
+      "Áp dụng giải tam giác vào thực tế"
+    ]
+  },
+  "chương 5": {
+    "Khái niệm vectơ": [
+      "Định nghĩa vectơ",
+      "Hai vectơ cùng phương, cùng hướng",
+      "Vector bằng nhau - Vector đối nhau",
+      "Vecto-không"
+    ],
+    "Tổng và hiệu của hai vecto": [
+      "Tổng của hai vecto",
+      "Tính chất của phép cộng các vecto",
+      "Hiệu của hai vecto",
+      "Tính chất vecto của trung điểm đoạn thẳng và trọng tâm tam giác"
+    ],
+    "Tích của một số với một vector": [
+      "Tích của một số với một vector và các tính chất",
+      "Điều kiện để hai vecto cùng phương"
+    ],
+    "Tích vô hướng của hai vecto": [
+      "Góc giữa hai vectơ",
+      "Tích vô hướng của hai vecto",
+      "Tính chất của tích vô hướng"
+    ]
+  },
+  "chương 6": {
+    "Số gần đúng và sai số": [
+      "Số gần đúng",
+      "Sai số tuyệt đối và sai số tương đối"
+    ],
+    "Mô tả và biểu diễn dữ liệu trên các bảng và biểu đồ": [
+      "Bảng số liệu",
+      "Biểu đồ"
+    ],
+    "Các số đặc trưng đo xu thế trung tâm của mẫu số liệu": [
+      "Số trung bình",
+      "Trung vị và tứ phân vị",
+      "Mốt"
+    ],
+    "Các số đặc trưng đo mức độ phân tán của mẫu số liệu": [
+      "Khoảng biến thiên và khoảng tứ phân vị",
+      "Phương sai và độ lệch chuẩn"
+    ]
+  }
+}

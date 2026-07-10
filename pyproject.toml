@@ -1,0 +1,22 @@
+[project]
+name = "eduagent"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "yuh2150",email = "118002918+yuh2150@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain-groq (>=0.3.5,<0.4.0)",
+    "torch",
+    "torchvision",
+    "timm",
+    "Pillow",
+    "numpy"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
