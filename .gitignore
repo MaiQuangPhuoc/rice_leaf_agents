@@ -131,10 +131,6 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-src/agent_rice_leaf/
-src/chatbot/
-src/indexing_rice/
-src/memory/
 
 
 
