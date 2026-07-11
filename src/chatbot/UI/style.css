@@ -1,0 +1,162 @@
+/* Tông màu chủ đạo thiên nhiên - Lúa lá xanh */
+:root {
+--primary-green: #4a7c2c;
+--dark-green: #3d6624;
+--light-green: #f0f4e1;
+--bg-rice: #fcfdf2;
+--text-main: #2d3a1a;
+--border-soft: #e2e8d0;
+--accent-emerald: #10b981;
+}
+
+body {
+background-color: var(--bg-rice);
+color: var(--text-main);
+font-family: 'Inter', system-ui, -apple-system, sans-serif;
+margin: 0;
+-webkit-font-smoothing: antialiased;
+}
+
+/* Hiệu ứng chuyển màu cho thanh Header */
+.leaf-gradient {
+background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
+box-shadow: 0 4px 12px rgba(74, 124, 44, 0.15);
+}
+
+/* Tùy chỉnh thanh cuộn tinh tế */
+.chat-container::-webkit-scrollbar {
+width: 5px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+background: #d1d9bc;
+border-radius: 10px;
+}
+
+.chat-container::-webkit-scrollbar-thumb:hover {
+background: #c2caa6;
+}
+
+/* Hiệu ứng nhấp nháy khi đang tải dữ liệu */
+.loading-pulse {
+animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+0%, 100% { opacity: 1; }
+50% { opacity: .4; }
+}
+
+/* Vùng kéo thả ảnh hiện đại */
+#dropZone {
+transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+border: 2px dashed #cbd5e1;
+cursor: pointer;
+background-color: white;
+}
+
+#dropZone:hover {
+border-color: var(--primary-green);
+background-color: #f8faf0;
+transform: translateY(-2px);
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Bong bóng tin nhắn Chat */
+.message-bubble {
+transition: all 0.2s ease;
+max-width: 85%;
+line-height: 1.5;
+}
+
+/* Hiệu ứng đổ bóng nhẹ cho các Card */
+.card-shadow {
+box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+}
+
+/* Input chát bo tròn mềm mại */
+#chatInput {
+border: 1px solid var(--border-soft);
+transition: all 0.2s ease;
+resize: none;
+}
+
+#chatInput:focus {
+outline: none;
+border-color: var(--primary-green);
+box-shadow: 0 0 0 3px rgba(74, 124, 44, 0.1);
+background-color: white;
+}
+
+/* Định dạng văn bản */
+.whitespace-pre-wrap {
+white-space: pre-wrap;
+word-wrap: break-word;
+line-height: 1.6;
+}
+
+/* Nút bấm hiệu ứng nhấn */
+button {
+transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:active {
+transform: scale(0.95);
+}
+
+button:hover {
+filter: brightness(1.1);
+}
+
+/* Animation khi hiện kết quả */
+.fade-in-up {
+animation: fadeInUp 0.4s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+from {
+opacity: 0;
+transform: translateY(10px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+/* Lớp phủ cho ảnh preview */
+.img-preview-container {
+position: relative;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Style cho phần kết quả mini (đáp ứng yêu cầu nhỏ gọn) */
+.result-mini-card {
+background: white;
+border: 1px solid var(--border-soft);
+border-radius: 8px;
+padding: 8px;
+display: inline-block;
+min-width: 140px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.result-main-label {
+color: var(--primary-green);
+font-weight: 800;
+font-size: 13px;
+border-bottom: 1px solid #f0f0f0;
+padding-bottom: 4px;
+margin-bottom: 4px;
+display: flex;
+justify-content: space-between;
+}
+
+.result-other-label {
+color: #94a3b8;
+font-size: 10px;
+display: flex;
+justify-content: space-between;
+}

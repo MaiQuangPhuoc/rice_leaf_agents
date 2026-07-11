@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LúaXanh AI - Trợ Lý Nông Nghiệp</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Thư viện biểu tượng Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Tông màu nông nghiệp thân thiện */
+        body {
+            background-color: #fcfdf2;
+            color: #2d3a1a;
+        }
+
+        .leaf-gradient {
+            background: linear-gradient(135deg, #4a7c2c 0%, #3d6624 100%);
+        }
+
+        /* Tùy chỉnh thanh cuộn khung chat */
+        .chat-container::-webkit-scrollbar {
+            width: 4px;
+        }
+        .chat-container::-webkit-scrollbar-thumb {
+            background: #dce4c7;
+            border-radius: 10px;
+        }
+
+        /* Hiệu ứng loading */
+        .loading-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .4; }
+        }
+
+        /* Bo góc mượt cho mobile */
+        @media (max-width: 640px) {
+            #chatWindow {
+                width: calc(100% - 2rem);
+                right: 1rem;
+                left: 1rem;
+                bottom: 5.5rem;
+                height: 70vh;
+            }
+        }
+
+        #chatWindow {
+            box-shadow: 0 10px 40px -10px rgba(0,0,0,0.3);
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Định dạng văn bản trong tin nhắn */
+        .whitespace-pre-wrap {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col font-sans">
+
+    <!-- Header -->
+    <header class="leaf-gradient text-white p-4 shadow-md sticky top-0 z-30 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+            <div class="bg-white p-1.5 rounded-full shadow-sm">
+                <i data-lucide="leaf" class="text-[#4a7c2c] w-6 h-6"></i>
+            </div>
+            <h1 class="text-xl font-bold tracking-tight uppercase">LúaXanh AI</h1>
+        </div>
+        <div class="hidden sm:block text-xs text-green-100 italic">Công nghệ nhận diện bệnh lúa cho nhà nông</div>
+    </header>
+
+    <!-- Vùng chính: Chẩn đoán bệnh -->
+    <main class="flex-1 max-w-4xl mx-auto w-full p-4 md:p-8">
+        <section class="bg-white rounded-3xl shadow-lg border border-[#e2e8d0] overflow-hidden flex flex-col">
+            <div class="bg-[#f0f4e1] px-6 py-4 border-b border-[#e2e8d0] flex items-center justify-between">
+                <div class="flex items-center gap-2 font-bold text-[#4a7c2c]">
+                    <i data-lucide="camera" class="w-6 h-6"></i>
+                    <h2 class="text-lg uppercase tracking-wide">Soi bệnh lá lúa</h2>
+                </div>
+                <button id="btnReset" class="text-xs flex items-center gap-1 text-gray-400 hover:text-[#4a7c2c] transition-colors">
+                    <i data-lucide="refresh-ccw" class="w-3 h-3"></i> Làm mới
+                </button>
+            </div>
+            
+            <div class="p-6 flex flex-col gap-6">
+                <!-- Vùng chọn ảnh -->
+                <div id="dropZone" class="w-full aspect-video md:aspect-[2/1] border-2 border-dashed border-[#a8b88d] rounded-2xl flex flex-col items-center justify-center gap-4 bg-[#f9fbf2] hover:bg-[#f1f5e6] cursor-pointer transition-all group overflow-hidden relative">
+                    <div id="uploadUI" class="flex flex-col items-center gap-3 text-center">
+                        <div class="p-5 bg-white rounded-full shadow-md group-hover:scale-110 transition-transform">
+                            <i data-lucide="image-plus" class="text-[#4a7c2c] w-10 h-10"></i>
+                        </div>
+                        <p class="font-bold text-[#4a7c2c]">Bấm vào đây để chọn ảnh lá lúa</p>
+                    </div>
+                    <img id="previewImg" class="hidden w-full h-full object-contain bg-black/5" alt="Ảnh đang soi">
+                </div>
+                
+                <input type="file" id="fileInput" accept="image/*" class="hidden">
+
+                <!-- Nút bấm chẩn đoán -->
+                <div id="actionArea" class="hidden">
+                    <button id="btnAnalyze" class="w-full bg-[#4a7c2c] text-white py-4 rounded-2xl font-bold text-lg shadow-xl hover:bg-[#3d6624] active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+                        XEM KẾT QUẢ NGAY <i data-lucide="search" class="w-5 h-5"></i>
+                    </button>
+                </div>
+
+                <!-- Đang xử lý -->
+                <div id="loadingUI" class="hidden py-10 flex flex-col items-center gap-3">
+                    <div class="w-12 h-12 border-4 border-[#e2e8d0] border-t-[#4a7c2c] rounded-full animate-spin"></div>
+                    <p class="font-bold text-[#4a7c2c]">AI đang phân tích...</p>
+                </div>
+
+                <!-- Kết quả hiển thị to và rõ ràng -->
+                <div id="resultArea" class="hidden">
+                    <div id="diagnosisContent" class="w-full">
+                        <!-- Kết quả sẽ được render vào đây -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Nút Chat tròn góc phải -->
+    <button id="chatToggle" class="fixed bottom-6 right-6 w-14 h-14 bg-[#4a7c2c] text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-50">
+        <i data-lucide="message-circle" id="chatIconOpen" class="w-7 h-7"></i>
+        <i data-lucide="x" id="chatIconClose" class="hidden w-7 h-7"></i>
+    </button>
+
+    <!-- Cửa sổ Chatbot (Đã cập nhật to hơn) -->
+    <section id="chatWindow" class="hidden fixed bottom-24 right-6 w-[350px] md:w-[500px] h-[600px] bg-white rounded-2xl shadow-2xl border border-[#e2e8d0] overflow-hidden flex flex-col z-50 animate-in slide-in-from-bottom-10 duration-300">
+        <div class="bg-[#4a7c2c] px-4 py-4 text-white flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <i data-lucide="bot" class="w-6 h-6"></i>
+                <h2 class="font-bold text-sm uppercase tracking-wider">Trợ lý LúaXanh</h2>
+            </div>
+        </div>
+
+        <div id="chatMessages" class="chat-container flex-1 overflow-y-auto p-4 space-y-4 bg-[#f9fbf2]/40">
+            <div class="flex justify-start">
+                <div class="max-w-[85%] bg-white border border-[#e2e8d0] text-[#2d3a1a] rounded-2xl rounded-tl-none px-4 py-3 shadow-sm text-sm leading-relaxed">
+                    Chào bà con! Tôi có thể giúp gì cho bà con về sâu bệnh lúa ạ?
+                </div>
+            </div>
+        </div>
+
+        <div class="p-3 bg-white border-t border-[#e2e8d0]">
+            <div id="chatImagePreviewArea" class="hidden mb-2 ml-2">
+                <div class="relative inline-block">
+                    <img id="chatImgPreview" class="w-12 h-12 rounded-lg object-cover border-2 border-[#4a7c2c]">
+                    <button id="btnRemoveChatImg" class="absolute -top-2 -right-2 bg-red-500 text-white rounded-full p-0.5 shadow-md">
+                        <i data-lucide="x" class="w-3 h-3"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="flex items-end gap-2 px-1">
+                <button id="btnChatFile" class="p-2.5 text-[#4a7c2c] bg-[#f0f4e1] rounded-xl hover:bg-[#e7f0d4] transition-colors shrink-0">
+                    <i data-lucide="image" class="w-6 h-6"></i>
+                </button>
+                <input type="file" id="chatFileInput" accept="image/*" class="hidden">
+                <div class="flex-1">
+                    <textarea id="chatInput" rows="1" placeholder="Nhắn gì đó..." class="w-full bg-[#f9fbf2] border border-[#dce4c7] rounded-xl px-3 py-3 text-sm focus:outline-none focus:border-[#4a7c2c] resize-none"></textarea>
+                </div>
+                <button id="btnSend" class="p-2.5 bg-[#4a7c2c] text-white rounded-xl shadow-md hover:bg-[#3d6624] disabled:bg-gray-300 transition-all shrink-0">
+                    <i data-lucide="send" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // --- KHỞI TẠO BIỂU TƯỢNG ---
+        lucide.createIcons();
+
+        // --- KHAI BÁO BIẾN ---
+        const fileInput = document.getElementById('fileInput');
+        const dropZone = document.getElementById('dropZone');
+        const uploadUI = document.getElementById('uploadUI');
+        const previewImg = document.getElementById('previewImg');
+        const actionArea = document.getElementById('actionArea');
+        const loadingUI = document.getElementById('loadingUI');
+        const resultArea = document.getElementById('resultArea');
+        const diagnosisContent = document.getElementById('diagnosisContent');
+        const btnAnalyze = document.getElementById('btnAnalyze');
+        const btnReset = document.getElementById('btnReset');
+
+        const chatToggle = document.getElementById('chatToggle');
+        const chatWindow = document.getElementById('chatWindow');
+        const chatIconOpen = document.getElementById('chatIconOpen');
+        const chatIconClose = document.getElementById('chatIconClose');
+        const chatInput = document.getElementById('chatInput');
+        const chatMessages = document.getElementById('chatMessages');
+        const btnSend = document.getElementById('btnSend');
+        const chatFileInput = document.getElementById('chatFileInput');
+        const btnChatFile = document.getElementById('btnChatFile');
+
+        // --- CẤU HÌNH KẾT NỐI PYTHON ---
+        const PYTHON_API_URL = "http://127.0.0.1:5000/chat";
+
+        // --- ĐÓNG MỞ CỬA SỔ CHAT ---
+        chatToggle.addEventListener('click', () => {
+            chatWindow.classList.toggle('hidden');
+            chatIconOpen.classList.toggle('hidden');
+            chatIconClose.classList.toggle('hidden');
+        });
+
+        // --- XỬ LÝ LỖI CLICK VÙNG CHỌN ẢNH ---
+        dropZone.addEventListener('click', () => {
+            fileInput.click();
+        });
+
+        // --- HÀM HIỂN THỊ TIN NHẮN VÀO KHUNG CHAT ---
+        function appendMessage(role, content, isImage = false) {
+            const div = document.createElement("div");
+            div.className = `flex ${role === "user" ? "justify-end" : "justify-start"} mb-4`;
+
+            let messageHtml = `<div class="max-w-[85%] rounded-2xl px-4 py-3 shadow-sm text-sm leading-relaxed ${
+                role === "user" 
+                ? "bg-[#4a7c2c] text-white rounded-tr-none" 
+                : "bg-white border border-[#e2e8d0] text-[#2d3a1a] rounded-tl-none"
+            }">`;
+
+            if (isImage) {
+                messageHtml += `<img src="${content}" class="w-full rounded-lg mb-1 max-h-48 object-cover shadow-sm" />`;
+            } else {
+                messageHtml += `<p class="whitespace-pre-wrap">${content}</p>`;
+            }
+            
+            messageHtml += `</div>`;
+            div.innerHTML = messageHtml;
+
+            chatMessages.appendChild(div);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        /**
+         * HÀM PHÂN TÍCH PHẢN HỒI TỪ PYTHON
+         */
+        function parsePythonResponse(text) {
+            if (!text || typeof text !== 'string') return null;
+            
+            const lines = text.split('\n').map(l => l.trim()).filter(l => l !== "");
+            if (lines.length === 0) return null;
+
+            // Kiểm tra dòng tiêu đề dự đoán
+            const mainMatch = lines[0].match(/Dự đoán bệnh\s*:\s*(.+)\s*\((\d+\.?\d*)%\)/i);
+            if (!mainMatch) return null;
+
+            const label = mainMatch[1].trim();
+            const confidence = mainMatch[2];
+            const others = [];
+
+            for (let i = 1; i < lines.length; i++) {
+                const otherMatch = lines[i].match(/(.+)\s*:\s*(\d+\.?\d*)%/);
+                if (otherMatch) {
+                    const oLabel = otherMatch[1].trim();
+                    const oConfidence = otherMatch[2];
+                    if (oLabel !== label && oLabel !== "---") {
+                        others.push({ label: oLabel, confidence: oConfidence });
+                    }
+                }
+            }
+
+            return { label, confidence, others };
+        }
+
+        // --- HÀM GỬI DỮ LIỆU VỀ PYTHON ---
+        async function sendToPython(text) {
+            try {
+                if (text.startsWith("image:")) {
+                    loadingUI.classList.remove('hidden');
+                    actionArea.classList.add('hidden');
+                    resultArea.classList.add('hidden');
+                }
+
+                const response = await fetch(PYTHON_API_URL, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ text })
+                });
+                
+                if (!response.ok) throw new Error('Kết nối thất bại');
+                
+                const data = await response.json();
+                
+                // --- CẬP NHẬT: LUÔN HIỂN THỊ TRONG CHAT ---
+                appendMessage("assistant", data.reply);
+                
+                // Phân tích để hiển thị vùng kết quả bên trái
+                const prediction = parsePythonResponse(data.reply);
+                if (prediction) {
+                    renderDiagnosisResults(prediction);
+                    loadingUI.classList.add('hidden');
+                    actionArea.classList.remove('hidden');
+                }
+            } catch (err) {
+                console.error(err);
+                appendMessage("assistant", "Lỗi: Không kết nối được với máy chủ Python. Bà con kiểm tra lại Flask nhé!");
+                loadingUI.classList.add('hidden');
+                actionArea.classList.remove('hidden');
+            }
+        }
+
+        // --- HÀM HIỂN THỊ KẾT QUẢ DỰ ĐOÁN TO RÕ ---
+        function renderDiagnosisResults(predictionData) {
+            const { label, confidence, others } = predictionData;
+
+            let html = `
+                <div class="flex flex-col gap-4 animate-in fade-in slide-in-from-bottom-2 duration-500">
+                    <div class="bg-gradient-to-r from-[#4a7c2c] to-[#3d6624] p-6 rounded-2xl text-white shadow-lg flex flex-col sm:flex-row justify-between items-center gap-4">
+                        <div class="text-center sm:text-left">
+                            <p class="text-green-100 text-xs font-bold uppercase tracking-widest mb-1">Dự đoán cao nhất</p>
+                            <h3 class="text-4xl font-black">${label}</h3>
+                        </div>
+                        <div class="bg-white/20 backdrop-blur-md px-6 py-3 rounded-2xl border border-white/30 text-center">
+                            <span class="block text-xs font-bold text-green-100 uppercase mb-1">Độ tin cậy</span>
+                            <span class="text-4xl font-black">${confidence}%</span>
+                        </div>
+                    </div>
+                    
+                    ${others && others.length > 0 ? `
+                        <div class="bg-[#f9fbf2] border border-[#e2e8d0] rounded-2xl p-4">
+                            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-3 px-1">Các dự đoán khác</p>
+                            <div class="space-y-2">
+                                ${others.map(item => `
+                                    <div class="flex justify-between items-center px-2 py-1 border-b border-[#e2e8d0]/50 last:border-0">
+                                        <span class="text-sm font-semibold text-gray-600">${item.label}</span>
+                                        <span class="text-sm font-bold text-[#4a7c2c]">${item.confidence}%</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+
+            diagnosisContent.innerHTML = html;
+            resultArea.classList.remove('hidden');
+            lucide.createIcons();
+        }
+
+        // --- XỬ LÝ CHỌN ẢNH ---
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    uploadUI.classList.add('hidden');
+                    previewImg.src = event.target.result;
+                    previewImg.classList.remove('hidden');
+                    actionArea.classList.remove('hidden');
+                    resultArea.classList.add('hidden');
+                    diagnosisContent.innerHTML = "";
+                    
+                    appendMessage("user", event.target.result, true);
+                    sendToPython(`image:${file.name}`);
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        btnAnalyze.addEventListener('click', () => {
+            if (!resultArea.classList.contains('hidden')) {
+                resultArea.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                loadingUI.classList.remove('hidden');
+                actionArea.classList.add('hidden');
+            }
+        });
+
+        btnReset.addEventListener('click', () => {
+            previewImg.classList.add('hidden');
+            uploadUI.classList.remove('hidden');
+            actionArea.classList.add('hidden');
+            resultArea.classList.add('hidden');
+            fileInput.value = '';
+            diagnosisContent.innerHTML = '';
+        });
+
+        // --- XỬ LÝ CHAT ---
+        async function handleSendMessage() {
+            const text = chatInput.value.trim();
+            if (!text) return;
+            if (!text.toLowerCase().endsWith('.jpg') && !text.toLowerCase().endsWith('.png')) {
+                appendMessage("user", text);
+            }
+            chatInput.value = "";
+            chatInput.style.height = "auto";
+            await sendToPython(text);
+        }
+
+        btnSend.addEventListener('click', handleSendMessage);
+        chatInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                handleSendMessage();
+            }
+        });
+
+        btnChatFile.addEventListener('click', () => chatFileInput.click());
+        chatFileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    appendMessage("user", event.target.result, true);
+                    sendToPython(`image:${file.name}`);
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        chatInput.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px';
+        });
+    </script>
+</body>
+</html>

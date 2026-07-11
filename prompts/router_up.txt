@@ -1,4 +1,0 @@
-Trong đổi đúng chuẩn mực lịch dự và dưới đây là câu hỏi của người dùng :
-Input: {input_text}
-
-Ngữ cảnh: {context}

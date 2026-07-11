@@ -1,0 +1,213 @@
+{
+  "ten_benh": "Khô vằn",
+
+  "ten_goi_khac": [
+    "Đốm vằn",
+    "Sheath Blight",
+    "Rhizoctonia solani"
+  ],
+
+  "giai_doan_nguy_co_cao": [
+    "đẻ nhánh",
+    "làm đòng",
+    "trổ bông"
+  ],
+
+  "muc_tieu_dieu_tri": [
+    "ngăn bệnh lây lan trong ruộng",
+    "giảm số lượng dảnh nhiễm bệnh",
+    "bảo vệ bẹ lá và lá công năng",
+    "duy trì khả năng quang hợp",
+    "hạn chế thất thoát năng suất"
+  ],
+
+  "template_ke_hoach": {
+    "nhẹ": [
+      "Khảo sát và đánh giá",
+      "Kiểm soát ban đầu",
+      "Theo dõi phục hồi"
+    ],
+
+    "trung_bình": [
+      "Khảo sát và đánh giá",
+      "Xử lý đợt 1",
+      "Kiểm soát lây lan",
+      "Theo dõi phục hồi",
+      "Đánh giá kết quả"
+    ],
+
+    "nặng": [
+      "Xử lý khẩn cấp",
+      "Kiểm soát lây lan",
+      "Theo dõi sát",
+      "Ổn định sinh trưởng",
+      "Đánh giá kết quả"
+    ]
+  },
+
+  "thu_vien_phase": [
+    {
+      "ma_phase": "PHASE_01",
+      "ten_phase": "Khảo sát và đánh giá",
+      "muc_tieu": "xác định mức độ bệnh và phạm vi lây lan",
+      "hanh_dong_chinh": [
+        "khảo sát toàn ruộng",
+        "xác định tỷ lệ dảnh nhiễm",
+        "đánh giá điều kiện ruộng",
+        "xác định khu vực nhiễm nặng"
+      ],
+      "ket_qua_mong_doi": "có đánh giá chính xác hiện trạng bệnh"
+    },
+
+    {
+      "ma_phase": "PHASE_02",
+      "ten_phase": "Xử lý khẩn cấp",
+      "muc_tieu": "ngăn bệnh tiếp tục lan rộng",
+      "hanh_dong_chinh": [
+        "can thiệp sớm",
+        "kiểm soát ổ bệnh",
+        "giảm điều kiện thuận lợi cho nấm"
+      ],
+      "ket_qua_mong_doi": "bệnh giảm tốc độ lây lan"
+    },
+
+    {
+      "ma_phase": "PHASE_03",
+      "ten_phase": "Kiểm soát lây lan",
+      "muc_tieu": "hạn chế bệnh lan sang các khu vực khác",
+      "hanh_dong_chinh": [
+        "theo dõi khu vực nhiễm",
+        "kiểm tra bẹ lá mới",
+        "quản lý điều kiện ruộng"
+      ],
+      "ket_qua_mong_doi": "không xuất hiện ổ bệnh lớn mới"
+    },
+
+    {
+      "ma_phase": "PHASE_04",
+      "ten_phase": "Theo dõi sát",
+      "muc_tieu": "phát hiện sớm nguy cơ bùng phát trở lại",
+      "hanh_dong_chinh": [
+        "kiểm tra định kỳ",
+        "so sánh mức độ bệnh",
+        "đánh giá hiệu quả xử lý"
+      ],
+      "ket_qua_mong_doi": "bệnh duy trì ổn định"
+    },
+
+    {
+      "ma_phase": "PHASE_05",
+      "ten_phase": "Ổn định sinh trưởng",
+      "muc_tieu": "hỗ trợ cây phục hồi",
+      "hanh_dong_chinh": [
+        "đánh giá sức sinh trưởng",
+        "theo dõi lá và bẹ mới",
+        "duy trì điều kiện ruộng phù hợp"
+      ],
+      "ket_qua_mong_doi": "cây sinh trưởng ổn định"
+    },
+
+    {
+      "ma_phase": "PHASE_06",
+      "ten_phase": "Đánh giá kết quả",
+      "muc_tieu": "xác nhận hiệu quả kiểm soát bệnh",
+      "hanh_dong_chinh": [
+        "đánh giá toàn ruộng",
+        "so sánh trước và sau xử lý",
+        "ghi nhận kết quả cuối kỳ"
+      ],
+      "ket_qua_mong_doi": "xác nhận hoàn thành kế hoạch"
+    }
+  ],
+
+  "anh_huong_thoi_tiet": {
+    "mưa nhiều": "tăng nguy cơ lây lan nhanh",
+    "ẩm độ cao": "nấm phát triển mạnh",
+    "sương mù": "duy trì điều kiện thuận lợi cho bệnh",
+    "ruộng rậm rạp": "tăng mức độ bệnh",
+    "nắng kéo dài": "giảm áp lực bệnh",
+    "gió mạnh": "có thể phát tán nguồn bệnh"
+  },
+
+  "hanh_dong_theo_thoi_tiet": {
+    "mưa nhiều": [
+      "tăng tần suất kiểm tra ruộng",
+      "theo dõi khu vực nhiễm nặng"
+    ],
+
+    "ẩm độ cao": [
+      "kiểm soát điều kiện ruộng",
+      "tăng giám sát bẹ lá"
+    ],
+
+    "sương mù": [
+      "kiểm tra ruộng vào sáng sớm",
+      "theo dõi diễn biến bệnh"
+    ],
+
+    "ruộng rậm rạp": [
+      "đánh giá mật độ ruộng",
+      "giảm điều kiện thuận lợi cho nấm"
+    ]
+  },
+
+  "luu_y_theo_giai_doan_lua": {
+    "đẻ nhánh": [
+      "bệnh bắt đầu phát triển mạnh",
+      "cần theo dõi thường xuyên"
+    ],
+
+    "làm đòng": [
+      "nguy cơ lây lan rất cao",
+      "ưu tiên kiểm soát sớm"
+    ],
+
+    "trổ bông": [
+      "cần bảo vệ lá công năng",
+      "tránh ảnh hưởng năng suất"
+    ]
+  },
+
+  "luu_y_theo_giong_lua": {
+    "ST25": [
+      "theo dõi sát khi ruộng dày và ẩm độ cao"
+    ],
+
+    "OM5451": [
+      "kiểm soát mật độ và dinh dưỡng hợp lý"
+    ],
+
+    "Đài Thơm 8": [
+      "tăng giám sát trong mùa mưa"
+    ]
+  },
+
+  "chi_so_danh_gia": [
+    "không xuất hiện vết bệnh mới",
+    "vết bệnh cũ ngừng lan",
+    "tỷ lệ dảnh nhiễm giảm",
+    "lá công năng được bảo vệ",
+    "cây tiếp tục sinh trưởng bình thường"
+  ],
+
+  "dau_hieu_phuc_hoi": [
+    "vết bệnh khô lại",
+    "không xuất hiện vết bệnh mới",
+    "lá mới phát triển khỏe mạnh",
+    "bệnh không lan lên tầng lá trên"
+  ],
+
+  "dau_hieu_benh_nang_hon": [
+    "vết bệnh lan nhanh lên lá",
+    "xuất hiện nhiều ổ bệnh mới",
+    "bệnh lan trên diện rộng",
+    "dảnh lúa suy yếu rõ rệt"
+  ],
+
+  "dieu_kien_hoan_thanh_ke_hoach": [
+    "không xuất hiện ổ bệnh mới",
+    "bệnh được kiểm soát ổn định",
+    "cây sinh trưởng bình thường",
+    "không có dấu hiệu lây lan tiếp tục"
+  ]
+}

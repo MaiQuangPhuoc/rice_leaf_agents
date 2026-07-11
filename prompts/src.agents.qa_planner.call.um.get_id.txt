@@ -1,4 +1,0 @@
-Đảm bảo đâu ra là chuỗi số không chứa các ký tự 
-
-ĐOẠN HÔI THOẠI GIỮA HỌC SINH VÀ BẠN NHƯ SAU:
-{qa_user}
