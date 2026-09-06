@@ -38,21 +38,17 @@ Quy trình thực hiện:
 ________________________________________
 **Phần 6: Kết quả và so sánh**
 **Bảng kết quả**
-┌───────────────────┬─────────┬──────────┬──────────┐
-│ Model             │ Version │ Accuracy │ Val Loss │
-├───────────────────┼─────────┼──────────┼──────────┤
-│ MobileNetV3-Large │ Origin  │ 0.910    │ 0.20     │
-│                   │ SAM2    │ 0.900    │ 0.26     │
-│                   │ Crops   │ **0.930**    │ **0.18**   │
-├───────────────────┼─────────┼──────────┼──────────┤
-│ ResNet50          │ Origin  │ 0.960    │ 0.07     │
-│                   │ SAM2    │ 0.950    │ 0.07     │
-│                   │ Crops   │**0.970**  │ **0.04**   │
-├───────────────────┼─────────┼──────────┼──────────┤
-│ ViT-Base          │ Origin  │ 0.970    │ **0.03**   │
-│                   │ SAM2    │ 0.970    │ 0.12     │
-│                   │ Crops   │ **0.975**  │ 0.06     │
-└───────────────────┴─────────┴──────────┴──────────┘
+| Model | Version | Accuracy | Val Loss |
+|---------|---------|---------:|---------:|
+| MobileNetV3-Large | Origin | 0.910 | 0.20 |
+| MobileNetV3-Large | SAM2 | 0.900 | 0.26 |
+| MobileNetV3-Large | **Crops** | **0.930** | **0.18** |
+| ResNet50 | Origin | 0.960 | 0.07 |
+| ResNet50 | SAM2 | 0.950 | 0.07 |
+| ResNet50 | **Crops** | **0.970** | **0.04** |
+| ViT-Base | Origin | 0.970 | **0.03** |
+| ViT-Base | SAM2 | 0.970 | 0.12 |
+| ViT-Base | **Crops** | **0.975** | 0.06 |
 
 **Nhận xét chung:**
 Version Crops cho kết quả tốt nhất trên cả 3 model về cả accuracy lẫn val loss, xác nhận rằng việc crop bbox kết hợp letterbox là hướng cải tiến đúng đắn.
